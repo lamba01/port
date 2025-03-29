@@ -1,5 +1,3 @@
-// import React from "react";
-import { Link } from "react-router-dom";
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
 import cepherlogo from "../assets/cepher-logo.jpeg";
@@ -24,15 +22,15 @@ const projectsData = [
     title: "Nigerian Journal of Social Health",
     description:
       "Developed the official website for the Nigerian Journal of Social Health (NJSH) using Open Journal Systems (OJS). This platform streamlines the submission, review, and publication process for research articles, providing a seamless experience for authors, editors, and reviewers.",
-    technologies: ["OJS", "PHP", "javascript"],
+    technologies: ["OJS", "PHP", "JavaScript", "CPanel"],
     links: "https://njsh.org.ng/index.php/njsh-journal",
   },
 ];
 
 export default function Projects() {
   return (
-    <section className="bg-[#f5f5f5] py-[50px] px-[20px] w-full text-center">
-      <h2 className="text-2xl">Projects</h2>
+    <section className="bg-[#f5f5f5] py-[50px] px-[20px] w-full text-start">
+      <h2>Projects</h2>
       <p>Some of the noteworthy projects I have built</p>
       <main className="flex flex-wrap justify-center gap-10 my-6 text-start">
         {projectsData.map((project) => (
@@ -65,8 +63,8 @@ export default function Projects() {
             </div>
           </div>
         ))}
+        <button className="primary">view all projects</button>
       </main>
-      <button className="primary">view all projects</button>
     </section>
   );
 }
