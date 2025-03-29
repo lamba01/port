@@ -3,7 +3,7 @@ import john from "../assets/john-oluwafemi.jpeg";
 
 export default function navBar() {
   return (
-    <menu className="flex w-full justify-between items-center px-5 sm:px-10 backdrop-blur-3xl h-[50px]">
+    <menu className="flex w-full justify-between items-center px-5 sm:px-10 z-20 fixed backdrop-blur-3xl h-[50px]">
       <div className="flex items-center">
         <img
           className="h-[40px] w-[40px] rounded-xl border-2 border-white shadow-md"
