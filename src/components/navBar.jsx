@@ -13,13 +13,22 @@ export default function navBar() {
         <h5 className="font-bold">John</h5>
       </div>
       <div className="flex gap-5 md:gap-10 capitalize">
-        <a className="text-sm md:text-lg" href="/about">
+        <a
+          className="text-sm md:text-lg text-black/60 hover:text-black"
+          href="/about"
+        >
           about
         </a>
-        <a className="text-sm md:text-lg" href="/work">
+        <a
+          className="text-sm md:text-lg text-black/60 hover:text-black"
+          href="/work"
+        >
           work
         </a>
-        <a className="text-sm md:text-lg" href="projects">
+        <a
+          className="text-sm md:text-lg text-black/60 hover:text-black"
+          href="projects"
+        >
           projects
         </a>
       </div>
