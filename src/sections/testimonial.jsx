@@ -35,7 +35,7 @@ export default function Testimonial() {
   const [hoveredId, setHoveredId] = useState(null);
 
   return (
-    <section className="bg-[#f5f5f5] py-[50px] px-[20px] w-full text-start overflow-hidden">
+    <section className="bg-[#f5f5f5] py-[50px] px-[20px] sm:px-[40px] w-full text-start overflow-hidden">
       <h2 className="text-2xl">Highly Rated ⭐</h2>
       <p>Expect nothing but perfection working with me</p>
       <main className="w-full flex flex-col sm:flex-row items-center justify-between py-16 sm:py-10 gap-10 sm:gap-0">

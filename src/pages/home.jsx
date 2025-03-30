@@ -1,16 +1,18 @@
 import React from "react";
-import Navbar from "../components/navBar";
 import Hero from "../sections/hero";
 import Projects from "../sections/projects";
 import Testimonial from "../sections/testimonial";
+import CreativeProjects from "../sections/creativeProjects";
+import Tools from "../sections/tools";
 
 function Home() {
   return (
     <div>
-      <Navbar />
       <Hero />
       <Projects />
       <Testimonial />
+      <CreativeProjects />
+      <Tools />
     </div>
   );
 }

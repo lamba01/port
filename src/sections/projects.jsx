@@ -29,7 +29,7 @@ const projectsData = [
 
 export default function Projects() {
   return (
-    <section className="bg-[#f5f5f5] py-[50px] px-[20px] w-full text-start">
+    <section className="bg-[#f5f5f5] py-[50px] px-[20px] sm:px-[40px] w-full text-start">
       <h2>Projects</h2>
       <p>Some of the noteworthy projects I have built</p>
       <main className="flex flex-wrap justify-center gap-10 my-6 text-start">
