@@ -37,6 +37,7 @@ export default function Projects() {
           <div
             key={project.id}
             className="w-full sm:w-4/5 sm:h-80 flex flex-col sm:flex-row gap-6 items-center p-5 bg-white shadow-xl"
+            data-aos="fade-up"
           >
             <img
               src={project.image}

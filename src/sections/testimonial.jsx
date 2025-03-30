@@ -36,9 +36,15 @@ export default function Testimonial() {
 
   return (
     <section className="bg-[#f5f5f5] py-[50px] px-[20px] sm:px-[40px] w-full text-start overflow-hidden">
-      <h2 className="text-2xl">Highly Rated ⭐</h2>
-      <p>Expect nothing but perfection working with me</p>
-      <main className="w-full flex flex-col sm:flex-row items-center justify-between py-16 sm:py-10 gap-10 sm:gap-0">
+      <h2 className="text-2xl" data-aos="fade-up">
+        Highly Rated ⭐
+      </h2>
+      <p data-aos="fade-up">Expect nothing but perfection working with me</p>
+      <main
+        className="w-full flex flex-col sm:flex-row items-center justify-between py-16 sm:py-10 gap-10 sm:gap-0"
+        data-aos="fade-up"
+        data-aos-delay="700"
+      >
         {testimonialData.map((testimonial) => (
           <div
             key={testimonial.id}

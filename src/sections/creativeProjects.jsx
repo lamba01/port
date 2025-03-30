@@ -29,6 +29,7 @@ export default function CreativeProjects() {
           <div
             key={data.id}
             className="border-[#f5f5f5] border-2 border-solid rounded-xl w-full sm:w-[48%] p-5 relative group"
+            data-aos="fade-up"
           >
             <a
               href={data.link}
@@ -47,7 +48,7 @@ export default function CreativeProjects() {
               href={data.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 flex items-center gap-2 mt-2 hover:underline"
+              className="flex items-center gap-2 mt-2 hover:underline text-[rgba(0,0,0,0.6)] hover:text-black"
             >
               View Project <FiExternalLink />
             </a>
