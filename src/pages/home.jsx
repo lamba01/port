@@ -9,7 +9,7 @@ function Home() {
   return (
     <div>
       <Hero />
-      <Projects limit={1} />
+      <Projects limit={2} />
       <Testimonial />
       <CreativeProjects />
       <Tools />

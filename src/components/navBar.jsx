@@ -1,16 +1,19 @@
 import React from "react";
 import john from "../assets/john-oluwafemi.jpeg";
+import { Link } from "react-router-dom";
 
 export default function navBar() {
   return (
-    <menu className="flex w-full justify-between items-center px-5 sm:px-10 z-20 fixed backdrop-blur-3xl h-[50px]">
+    <nav className="flex w-full justify-between items-center px-5 sm:px-10 z-20 fixed backdrop-blur-3xl h-[50px]">
       <div className="flex items-center">
-        <img
-          className="h-[40px] w-[40px] rounded-xl border-2 border-white shadow-md"
-          src={john}
-          alt=""
-        />
-        <h5 className="font-bold">John</h5>
+        <Link to="/" className="flex items-center gap-2">
+          <img
+            className="h-[40px] w-[43px] rounded-xl border-2 border-white shadow-md"
+            src={john}
+            alt=""
+          />
+          <h5 className="font-bold">John</h5>
+        </Link>
       </div>
       <div className="flex gap-5 md:gap-10 capitalize">
         <a
@@ -32,6 +35,6 @@ export default function navBar() {
           projects
         </a>
       </div>
-    </menu>
+    </nav>
   );
 }

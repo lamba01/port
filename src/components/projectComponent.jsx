@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
 import cepherlogo from "../assets/cepher-logo.jpeg";
@@ -122,7 +123,11 @@ export default function Projects({ limit }) {
             </div>
           </div>
         ))}
-        {limit && <button className="primary">view all projects</button>}
+        {limit && (
+          <Link to={`/projects`}>
+            <button className="primary">view all projects </button>
+          </Link>
+        )}
       </main>
     </section>
   );
