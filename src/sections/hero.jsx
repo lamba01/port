@@ -1,7 +1,7 @@
 // import React from "react";
 import john from "../assets/john-oluwafemi.jpeg";
 
-export default function Hero() {
+export default function Hero({ scrollToProjects }) {
   return (
     <section className="w-full h-screen flex flex-col justify-center items-center px-[20px] md:px-0">
       <img
@@ -24,10 +24,17 @@ export default function Hero() {
         Coding my way through challenges to build something amazing.
       </p>
       <div className="flex flex-col md:flex-row w-full items-center justify-center mt-5 gap-3">
-        <button className="primary" data-aos="fade-up">
-          lets work
-        </button>
-        <button className="secondary" data-aos="fade-up" data-aos-delay="600">
+        <a href="mailto:moyinooluwafemi2004@gmail.com">
+          <button className="primary" data-aos="fade-up">
+            lets work
+          </button>
+        </a>
+        <button
+          onClick={scrollToProjects}
+          className="secondary"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
           explore
         </button>
       </div>
