@@ -2,16 +2,6 @@
 import john from "../assets/john-oluwafemi.jpeg";
 
 export default function Hero({ scrollToProjects }) {
-  // Function to handle the click event and trigger conversion
-  const handleWorkButtonClick = () => {
-    // Trigger the Google Ads conversion event
-    window.gtag("event", "conversion", {
-      send_to: "AW-10799546053/pU3GCLjBzJ0aEMX9z50o",
-    });
-
-    // Open the email client
-    window.location.href = "mailto:moyinooluwafemi2004@gmail.com";
-  };
   return (
     <section className="w-full h-screen flex flex-col justify-center items-center px-[20px] md:px-0">
       <img
@@ -34,13 +24,11 @@ export default function Hero({ scrollToProjects }) {
         Coding my way through challenges to build something amazing.
       </p>
       <div className="flex flex-col md:flex-row w-full items-center justify-center mt-10 sm:mt-5 gap-3">
-        <button
-          onClick={handleWorkButtonClick}
-          className="primary"
-          data-aos="fade-up"
-        >
-          lets work
-        </button>
+        <a href="mailto:moyinooluwafemi2004@gmail.com">
+          <button className="primary" data-aos="fade-up">
+            lets work
+          </button>
+        </a>
         <button
           onClick={scrollToProjects}
           className="secondary"
