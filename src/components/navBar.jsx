@@ -1,5 +1,6 @@
 import React from "react";
-import john from "../assets/john-oluwafemi.jpeg";
+// import john from "../assets/john-oluwafemi.jpeg";
+import test from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
 export default function navBar() {
@@ -8,8 +9,8 @@ export default function navBar() {
       <div className="flex items-center">
         <Link to="/" className="flex items-center gap-2">
           <img
-            className="h-[40px] w-[43px] rounded-xl border-2 border-white shadow-md"
-            src={john}
+            className="h-[35px] w-[35px] rounded-xl border-2 border-white shadow-md"
+            src={test}
             alt=""
           />
           <h5 className="font-bold">John</h5>

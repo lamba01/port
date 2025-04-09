@@ -7,6 +7,7 @@ import Projects from "./pages/projects";
 import Work from "./pages/work";
 import Navbar from "./components/navBar";
 import Footer from "./components/footer";
+import ThankYou from "./pages/thankYou";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/work" element={<Work />} />
+        <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
       <Footer />
     </>
