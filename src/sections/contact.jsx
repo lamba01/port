@@ -32,7 +32,7 @@ export default function Contact() {
               name="email"
               required
               placeholder="Your email"
-              className="w-full px-4 py-2 border rounded-md dark:bg-gray-700 dark:border-gray-600"
+              className="w-full px-4 py-2 border rounded-md dark:bg-gray-700"
             />
             <ValidationError
               prefix="Email"
@@ -51,7 +51,7 @@ export default function Contact() {
               required
               placeholder="Your message"
               rows="4"
-              className="w-full px-4 py-2 border rounded-md dark:bg-gray-700 dark:border-gray-600"
+              className="w-full px-4 py-2 border rounded-md dark:bg-gray-700"
             />
             <ValidationError
               prefix="Message"
