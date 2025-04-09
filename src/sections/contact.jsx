@@ -14,7 +14,7 @@ export default function Contact() {
   }, [state.succeeded, navigate]);
 
   return (
-    <section id="contact" className="py-16 px-4 bg-gray-100 dark:bg-gray-800">
+    <section id="contact" className="py-16 px-4 bg-gray-100">
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6">Let’s work together</h2>
         <p className="mb-8 text-gray-600 dark:text-gray-300">
