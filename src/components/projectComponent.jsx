@@ -19,7 +19,7 @@ const projectsData = [
     logo: cepherlogo,
     // title: "Centre for Population and Health Research Website",
     description:
-      "Independently developed the Centre for Population and Health Research website. A React and Contentful-powered website featuring a modern UI that helps the organization reach a wider audience and keep visitors informed about its activities.",
+      "Independently designed and developed the Centre for Population and Health Research website to help them share updates, publish reports, and reach a wider audience. It's easy to update and works smoothly on all devices.",
     technologies: ["React", "Tailwind CSS", "CMS", "Contentful", "Vite"],
     links: "https://www.cepher.org.ng",
   },
@@ -29,7 +29,7 @@ const projectsData = [
     logo: commercelogo,
     // title: "Nigerian Journal of Social Health",
     description:
-      "Developed the official website for the Nigerian Journal of Social Health (NJSH) using Open Journal Systems (OJS). This platform streamlines the submission, review, and publication process for research articles, providing a seamless experience for authors, editors, and reviewers.",
+      "Created an academic publishing site for the Nigerian Journal of Social Health using Open Journal Systems (OJS). It helps researchers easily submit and publish papers online, with tools for editors and reviewers to manage the process.",
     technologies: ["OJS", "PHP", "JavaScript", "CPanel"],
     links: "https://njsh.org.ng/index.php/njsh-journal",
   },
@@ -37,10 +37,9 @@ const projectsData = [
     id: 3,
     image: shopease,
     logo: commercelogo,
-    description: `Designed and developed a full-stack eCommerce platform with a seamless shopping experience. 
-    The site features user authentication, product management, cart functionality, and a simulated checkout 
-    process. Built with Javascript and its libraries, it ensures smooth navigation, 
-    secure transactions, and an intuitive UI for both customers and administrators.`,
+    description: `Developed a complete online shopping site, including user login, 
+    product listings, cart system, and checkout simulation. Designed to be simple, clean, and 
+    functional for both customers and business owners. Includes Paystack payment and order tracking.`,
     technologies: ["React", "Nodejs", "MySQL", "Express", "Ejs"],
     links: "https://commeercee.vercel.app",
   },
@@ -60,8 +59,8 @@ const projectsData = [
     image: imagehub,
     logo: imagehublogo,
     description: `Developed a sleek and responsive image search website powered by the Unsplash API. 
-    Users can search for high-quality images, preview results, and download their favorites seamlessly. 
-    Designed with a clean UI and fast performance to enhance the browsing experience.`,
+     Users can browse and download high-quality photos from the Unsplash database.
+     It’s fast, mobile-friendly, and visually engaging.`,
     technologies: ["React", "Jest", "CSS", "Unsplash API", "Axios"],
     links: "https://imagehubb.vercel.app",
   },

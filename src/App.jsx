@@ -1,6 +1,6 @@
 // App.jsx
 import { useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Projects from "./pages/projects";
@@ -18,6 +18,24 @@ const App = () => {
       once: false,
     });
   }, []);
+
+  const ScrollToHashElement = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+      if (location.hash) {
+        const el = document.querySelector(location.hash);
+        if (el) {
+          setTimeout(() => {
+            el.scrollIntoView({ behavior: "smooth" });
+          }, 0);
+        }
+      }
+    }, [location]);
+
+    return null;
+  };
+
   return (
     <>
       <Navbar />

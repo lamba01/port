@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import Hero from "../sections/hero";
 import Projects from "../components/projectComponent";
 import Testimonial from "../sections/testimonial";
@@ -12,6 +12,15 @@ function Home() {
   const scrollToProjects = () => {
     projectsRef.current?.scrollIntoView({ behavior: "smooth" });
   };
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const el = document.querySelector(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, []);
 
   return (
     <div>

@@ -35,6 +35,13 @@ export default function navBar() {
         >
           projects
         </a>
+        <a
+          className="text-sm md:text-lg text-black/60 hover:text-black"
+          href="https://johncodes.xyz/#contact"
+          rel="noopener noreferrer"
+        >
+          contact
+        </a>
       </div>
     </nav>
   );

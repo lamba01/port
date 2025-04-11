@@ -8,14 +8,14 @@ const creativeData = [
     id: 1,
     image: shopease,
     description:
-      "Developed this full stack online store with seamless navigation, product displays, and simulated checkout process.",
+      "An online storefront designed for small businesses — features smooth browsing, clean product displays, and a working (simulated) checkout experience.",
     link: "https://commeercee.vercel.app",
   },
   {
     id: 2,
     image: taskmanagement,
     description:
-      "A full-stack task manager with real-time updates and authentication. Built with MERN stack.",
+      "A user-friendly task management tool built for teams — includes secure login, real-time task updates, and project tracking.",
     link: "https://task-managementapp-client.vercel.app/",
   },
 ];

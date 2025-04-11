@@ -15,7 +15,8 @@ export default function AboutSection() {
           <span className="font-semibold">
             React, Node.js, and Tailwind CSS,
           </span>{" "}
-          I craft smooth user experiences and powerful backend systems.
+          I build websites that are easy to use and work efficiently behind the
+          scenes.
         </h4>
         <h4 className="text-sm sm:text-xl text-black">
           Right now, I&apos;m focused on{" "}
@@ -28,13 +29,18 @@ export default function AboutSection() {
             I also serve as a moderator for the Nigerian Journal of Social
             Health website,
           </span>{" "}
-          a platform I built myself using Open Journal Systems (OJS) to
-          streamline research publication and accessibility.
+          a platform I built myself using Open Journal Systems (OJS) to make it
+          easier for researchers to submit and publish their work online.
         </h4>
         <h4 className="text-sm sm:text-xl text-black">
           When I&apos;m not coding, I&apos;m exploring new technologies and
           refining my skills in Web development to push the boundaries of
           what&apos;s possible. 🚀
+        </h4>
+        <h4 className="text-sm sm:text-xl text-black font-bold">
+          If you're looking for someone who can bring your idea to life —
+          whether it's an online store, a booking system, or a custom website —
+          let's connect!
         </h4>
       </div>
       <main className="flex flex-col sm:flex-row gap-5 justify-center w-full">
