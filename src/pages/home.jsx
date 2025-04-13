@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import Hero from "../sections/hero";
+import HireMe from "../sections/hireMe";
 import Projects from "../components/projectComponent";
 import Testimonial from "../sections/testimonial";
 import CreativeProjects from "../sections/creativeProjects";
@@ -25,6 +26,7 @@ function Home() {
   return (
     <div>
       <Hero scrollToProjects={scrollToProjects} />
+      <HireMe />
       <div ref={projectsRef}>
         <Projects limit={2} />
       </div>

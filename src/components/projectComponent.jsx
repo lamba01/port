@@ -106,7 +106,7 @@ export default function Projects({ limit }) {
               <img
                 src={project.logo}
                 alt="Project logo"
-                className="w-30 h-10"
+                className="w-24 h-12"
               />
               <p className="text-sm font-bold">{project.description}</p>
               <div className="flex flex-wrap gap-2">

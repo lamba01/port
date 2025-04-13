@@ -14,7 +14,7 @@ export default function Contact() {
   }, [state.succeeded, navigate]);
 
   return (
-    <section id="contact" className="py-16 px-4 bg-gray-100">
+    <section id="contact" className="py-16 px-4 bg-[#f5f5f5]">
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6">Let’s work together</h2>
         <p className="mb-8 text-gray-600 dark:text-gray-300">
@@ -32,7 +32,7 @@ export default function Contact() {
               name="email"
               required
               placeholder="Your email"
-              className="w-full px-4 py-2 border rounded-md border-blue-300 border-solid"
+              className="w-full px-4 py-2 border rounded-md border-black border-solid"
             />
             <ValidationError
               prefix="Email"
@@ -51,7 +51,7 @@ export default function Contact() {
               required
               placeholder="Your message"
               rows="4"
-              className="w-full px-4 py-2 border rounded-md border-blue-300 border-solid"
+              className="w-full px-4 py-2 border rounded-md border-black border-solid"
             />
             <ValidationError
               prefix="Message"
