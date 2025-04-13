@@ -38,9 +38,9 @@ export default function Hero({ scrollToProjects }) {
           onClick={scrollToProjects}
           className="bg-[#f5f5f5] text-black cursor-pointer py-3 px-8 sm:w-[250px] w-[90vw] hover:bg-[#d1d5db]"
           data-aos="fade-up"
-          data-aos-delay="600"
+          data-aos-delay="300"
         >
-          explore
+          explore my work
         </button>
       </div>
     </section>

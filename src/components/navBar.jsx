@@ -36,7 +36,7 @@ export default function navBar() {
           projects
         </a>
         <a
-          className="text-sm md:text-lg text-black/60 hover:text-black"
+          className="text-sm md:text-lg text-black/60 hover:text-black hidden sm:block"
           href="https://johncodes.xyz/#contact"
           rel="noopener noreferrer"
         >

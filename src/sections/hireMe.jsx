@@ -2,10 +2,16 @@ import React from "react";
 
 export default function HireMe() {
   return (
-    <section className="w-full py-20 px-6 sm:px-12 bg-[#f5f5f5]">
-      <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-8 text-black">
-        Why You Should Hire Me
-      </h2>
+    <section className="w-full py-20 px-6 sm:px-12 bg-[#f5f5f5] flex flex-col justify-center items-center gap-10">
+      <div>
+        {" "}
+        <h2 className="text-2xl sm:text-3xl font-semibold text-center text-black">
+          Why You Should Hire Me
+        </h2>
+        <p className="text-center">
+          I only take 2 projects per month — secure your spot!
+        </p>
+      </div>
       <div className="grid gap-6 sm:grid-cols-2 max-w-5xl mx-auto text-black">
         <div>
           <h4 className="text-xl font-medium mb-2">
@@ -46,6 +52,14 @@ export default function HireMe() {
           </p>
         </div>
       </div>
+      <a href="#contact" className="sm:w-[250px] flex justify-center">
+        <button
+          className="bg-black text-white cursor-pointer py-3 px-8 sm:w-[250px] w-[90vw] hover:bg-[#333333]"
+          data-aos="fade-up"
+        >
+          Book a Free Chat
+        </button>
+      </a>
     </section>
   );
 }

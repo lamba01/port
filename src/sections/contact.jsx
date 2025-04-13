@@ -40,6 +40,27 @@ export default function Contact() {
               errors={state.errors}
             />
           </div>
+          <div>
+            <label htmlFor="service" className="block mb-1 font-medium">
+              Service interested in
+            </label>
+            <select
+              name="service"
+              className="w-full px-4 py-2 border rounded-md border-black border-solid"
+              required
+            >
+              <option value="">Select one...</option>
+              <option value="Website">Website</option>
+              <option value="eCommerce">eCommerce</option>
+              <option value="Redesign">Redesign</option>
+              <option value="Other">Other</option>
+            </select>
+            <ValidationError
+              prefix="Service"
+              field="service"
+              errors={state.errors}
+            />
+          </div>
 
           <div>
             <label htmlFor="message" className="block mb-1 font-medium">

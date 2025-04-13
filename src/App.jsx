@@ -8,6 +8,7 @@ import Work from "./pages/work";
 import Navbar from "./components/navBar";
 import Footer from "./components/footer";
 import ThankYou from "./pages/thankYou";
+import StickyContactButton from "./components/stickyContactBtn";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -39,6 +40,7 @@ const App = () => {
   return (
     <>
       <Navbar />
+      <StickyContactButton />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
