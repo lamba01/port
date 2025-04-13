@@ -28,7 +28,7 @@ export default function Hero({ scrollToProjects }) {
       <div className="flex flex-col md:flex-row w-full items-center justify-center mt-10 sm:mt-5 gap-3">
         <a href="#contact" className="sm:w-[250px] flex justify-center">
           <button
-            className="bg-black text-white cursor-pointer py-3 px-8 sm:w-[250px] w-[90vw]"
+            className="bg-black text-white cursor-pointer py-3 px-8 sm:w-[250px] w-[90vw] hover:bg-[#333333]"
             data-aos="fade-up"
           >
             lets work
@@ -36,7 +36,7 @@ export default function Hero({ scrollToProjects }) {
         </a>
         <button
           onClick={scrollToProjects}
-          className="secondary"
+          className="bg-[#f5f5f5] text-black cursor-pointer py-3 px-8 sm:w-[250px] w-[90vw] hover:bg-[#d1d5db]"
           data-aos="fade-up"
           data-aos-delay="600"
         >

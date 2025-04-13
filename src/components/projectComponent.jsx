@@ -124,7 +124,7 @@ export default function Projects({ limit }) {
         ))}
         {limit && (
           <Link to={`/projects`}>
-            <button className="bg-black text-white cursor-pointer py-3 px-8 sm:w-[250px] w-[90vw]">
+            <button className="bg-black text-white cursor-pointer py-3 px-8 sm:w-[250px] w-[90vw] hover:bg-[#333333]">
               view all projects{" "}
             </button>
           </Link>
