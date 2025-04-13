@@ -2,11 +2,11 @@ import React from "react";
 
 export default function HireMe() {
   return (
-    <section className="w-full py-20 px-6 sm:px-12 bg-[#f5f5f5]  dark:bg-zinc-900">
-      <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-8 text-black dark:text-white">
+    <section className="w-full py-20 px-6 sm:px-12 bg-[#f5f5f5]">
+      <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-8 text-black">
         Why You Should Hire Me
       </h2>
-      <div className="grid gap-6 sm:grid-cols-2 max-w-5xl mx-auto text-black dark:text-white">
+      <div className="grid gap-6 sm:grid-cols-2 max-w-5xl mx-auto text-black">
         <div>
           <h4 className="text-xl font-medium mb-2">
             ✅ Business-Focused Solutions

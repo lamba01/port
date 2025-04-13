@@ -4,7 +4,7 @@ import test from "../assets/logo.png";
 
 export default function Hero({ scrollToProjects }) {
   return (
-    <section className="w-full h-screen flex flex-col justify-center items-center px-[20px] md:px-0">
+    <section className="w-full h-screen flex flex-col justify-center items-center px-[20px] md:px-0 ">
       <img
         src={test}
         alt="Profile"
@@ -26,8 +26,11 @@ export default function Hero({ scrollToProjects }) {
         solutions. <br /> I turn ideas into responsive, user-friendly web apps.
       </p>
       <div className="flex flex-col md:flex-row w-full items-center justify-center mt-10 sm:mt-5 gap-3">
-        <a href="#contact" className="w-[100%] sm:w-[250px]">
-          <button className="primary" data-aos="fade-up">
+        <a href="#contact" className="sm:w-[250px] flex justify-center">
+          <button
+            className="bg-black text-white cursor-pointer py-3 px-8 sm:w-[250px] w-[90vw]"
+            data-aos="fade-up"
+          >
             lets work
           </button>
         </a>

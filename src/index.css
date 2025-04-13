@@ -72,33 +72,11 @@ a {
   text-decoration: none;
 }
 
-/* 🌙 Dark Mode Support */
-body.dark {
-  background-color: #111827; /* bg-gray-900 */
-  color: white;
-}
-
-.dark h1,
-.dark h2,
-.dark h3 {
-  color: white;
-}
-
-.dark p {
-  color: #d1d5db; /* text-gray-400 */
-}
-
-.dark button.secondary {
-  background-color: #374151; /* dark:bg-gray-700 */
-  color: white;
-}
-
-.dark button.secondary:hover {
-  background-color: #4b5563; /* dark:hover:bg-gray-600 */
-}
 @media only screen and (max-width: 767px) {
-  button.primary,
   button.secondary {
     width: 100%;
+  }
+  button.primary {
+    width: 90vw;
   }
 }

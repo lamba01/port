@@ -63,7 +63,7 @@ export default function Contact() {
           <button
             type="submit"
             disabled={state.submitting}
-            className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-900 transition"
+            className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-900 transition cursor-pointer"
           >
             {state.submitting ? "Sending..." : "Send Message"}
           </button>

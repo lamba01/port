@@ -24,7 +24,7 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="w-full">
       <Hero scrollToProjects={scrollToProjects} />
       <HireMe />
       <div ref={projectsRef}>
