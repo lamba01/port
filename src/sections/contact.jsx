@@ -50,9 +50,9 @@ export default function Contact() {
               required
             >
               <option value="">Select one...</option>
-              <option value="Website">Website</option>
-              <option value="eCommerce">eCommerce</option>
-              <option value="Redesign">Redesign</option>
+              <option value="Website">A new website</option>
+              <option value="eCommerce">An eCommerce site</option>
+              <option value="Redesign">Redesign my current site</option>
               <option value="Other">Other</option>
             </select>
             <ValidationError
