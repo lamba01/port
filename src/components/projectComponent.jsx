@@ -19,7 +19,7 @@ const projectsData = [
     logo: cepherlogo,
     // title: "Centre for Population and Health Research Website",
     description:
-      "Independently designed and developed the Centre for Population and Health Research website to help them share updates, publish reports, and reach a wider audience. It's easy to update and works smoothly on all devices.",
+      "I Designed and developed the Centre for Population and Health Research website to help them share updates, publish reports, and reach a wider audience. It's easy to update and works smoothly on all devices.",
     technologies: ["React", "Tailwind CSS", "CMS", "Contentful", "Vite"],
     links: "https://www.cepher.org.ng",
   },
@@ -86,7 +86,7 @@ const projectsData = [
 
 export default function Projects({ limit }) {
   return (
-    <section className="bg-[#f5f5f5] py-[50px] px-[20px] sm:px-[40px] text-start overflow-x-hidden">
+    <section className="bg-[#f5f5f5] py-[50px] px-[20px] sm:px-[40px] text-start overflow-hidden">
       <h2>{limit ? "Projects" : "Explore my work👀"}</h2>
       <p>Some of the noteworthy projects I have built</p>
       <main className="flex flex-wrap justify-center gap-10 my-6 text-start">
@@ -124,9 +124,9 @@ export default function Projects({ limit }) {
         ))}
         {limit && (
           <Link to={`/projects`}>
-            {/* <button className="bg-black text-white cursor-pointer py-3 px-8 sm:w-[250px] w-[90vw] hover:bg-[#333333]">
+            <button className="bg-black text-white cursor-pointer py-3 px-8 sm:w-[250px] w-[90vw] hover:bg-[#333333]">
               view all projects{" "}
-            </button> */}
+            </button>
           </Link>
         )}
       </main>

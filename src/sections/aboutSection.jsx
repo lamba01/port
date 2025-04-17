@@ -9,22 +9,21 @@ export default function AboutSection() {
     <section className="py-[100px] w-full flex flex-col gap-20 items-center justify-center px-[20px] sm:px-[40px]">
       <div className="flex flex-col justify-center gap-3 w-full sm:w-4/5">
         <h4 className="text-sm sm:text-xl text-black">
-          I'm a <span className="font-semibold">Full-Stack Developer</span>{" "}
-          passionate about building scalable and intuitive web applications.
-          With expertise in{" "}
+          I'm a <span className="font-semibold">Full-Stack Developer</span> who
+          enjoys building clean, easy-to-use web applications. I work mostly
+          with{" "}
           <span className="font-semibold">
             React, Node.js, and Tailwind CSS,
           </span>{" "}
-          I build websites that are easy to use and work efficiently behind the
-          scenes.
+          and I build websites that not only look good but work smoothly behind
+          the scenes.
         </h4>
         <h4 className="text-sm sm:text-xl text-black">
           Right now, I&apos;m focused on{" "}
           <span className="font-semibold">
-            building SaaS products and AI-powered solutions
+            helping businesses get online with eCommerce stores and booking
+            platforms.
           </span>{" "}
-          , while also helping businesses improve their online presence through
-          eCommerce and appointment-based platforms .{" "}
           <span className="font-semibold">
             I also serve as a moderator for the Nigerian Journal of Social
             Health website,
@@ -33,9 +32,8 @@ export default function AboutSection() {
           easier for researchers to submit and publish their work online.
         </h4>
         <h4 className="text-sm sm:text-xl text-black">
-          When I&apos;m not coding, I&apos;m exploring new technologies and
-          refining my skills in Web development to push the boundaries of
-          what&apos;s possible. 🚀
+          When I&apos;m not coding, I&apos;m usually messing around with new
+          tech or brushing up on web dev stuff to keep getting better.
         </h4>
         <h4 className="text-sm sm:text-xl text-black font-bold">
           If you're looking for someone who can bring your idea to life —
@@ -43,6 +41,7 @@ export default function AboutSection() {
           let's connect!
         </h4>
       </div>
+      <h2>my workspace</h2>
       <main className="flex flex-col sm:flex-row gap-5 justify-center w-full">
         <img
           data-aos="fade-up"
