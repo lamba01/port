@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import Hero from "../sections/hero";
 import HireMe from "../sections/hireMe";
 import Projects from "../components/projectComponent";
@@ -24,17 +25,26 @@ function Home() {
   }, []);
 
   return (
-    <div>
-      <Hero scrollToProjects={scrollToProjects} />
-      <HireMe />
-      <div ref={projectsRef}>
-        <Projects limit={2} />
+    <>
+      <Helmet>
+        <title>John Oluwafemi | Full-Stack Web Developer</title>
+        <meta
+          name="description"
+          content="Helping startups and businesses go digital with custom, responsive web solutions. Turn your ideas into powerful online experiences."
+        />
+      </Helmet>
+      <div>
+        <Hero scrollToProjects={scrollToProjects} />
+        <HireMe />
+        <div ref={projectsRef}>
+          <Projects limit={2} />
+        </div>
+        <Testimonial />
+        <CreativeProjects />
+        <Contact />
+        <Tools />
       </div>
-      <Testimonial />
-      <CreativeProjects />
-      <Contact />
-      <Tools />
-    </div>
+    </>
   );
 }
 

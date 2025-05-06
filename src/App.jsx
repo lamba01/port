@@ -1,6 +1,7 @@
 // App.jsx
 import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Projects from "./pages/projects";
@@ -39,6 +40,35 @@ const App = () => {
 
   return (
     <>
+      <Helmet>
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "John Moyinoluwa Oluwafemi",
+            "url": "https://johncodes.xyz",
+            "image": "https://johncodes.xyz/john-oluwafemi.jpeg",
+            "sameAs": [
+              "https://www.linkedin.com/in/johnmoyinoluwa/",
+              "https://github.com/lamba01/"
+            ],
+            "email": "mailto:moyinooluwafemi2004@gmail.com",
+            "jobTitle": "Full-Stack Web Developer",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Freelance"
+            },
+            "knowsAbout": ["React", "Node.js", "Tailwind CSS", "SEO", "SaaS", "eCommerce"],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Lagos",
+              "addressCountry": "NG"
+            }
+          }
+          `}
+        </script>
+      </Helmet>
       <Navbar />
       <StickyContactButton />
       <Routes>

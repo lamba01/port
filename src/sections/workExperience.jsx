@@ -11,7 +11,7 @@ const experiences = [
   {
     company: "Nigerian Journal of Social Health",
     date: "2024 - 2025",
-    title: "Website Developer",
+    title: "Lead Developer",
     description:
       "Developed the NJSH journal submission website to streamline academic publishing and improve online visibility.",
   },

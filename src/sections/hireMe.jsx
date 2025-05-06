@@ -6,7 +6,7 @@ export default function HireMe() {
       <div>
         {" "}
         <h2 className="text-2xl sm:text-3xl font-semibold text-center text-black">
-          Why You Should Hire Me
+          Why work with Me
         </h2>
         <p className="text-center">
           I only take 2 projects per month — secure your spot!
