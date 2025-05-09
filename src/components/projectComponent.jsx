@@ -89,11 +89,11 @@ export default function Projects({ limit }) {
     <section className="bg-[#f5f5f5] py-[50px] px-[20px] sm:px-[40px] text-start overflow-hidden">
       <h2>{limit ? "Projects" : "Explore my work👀"}</h2>
       <p>Some of the noteworthy projects I have built</p>
-      <main className="flex flex-wrap justify-center gap-10 my-6 text-start">
+      <main className="flex flex-wrap justify-center gap-20 my-6 text-start">
         {projectsData.slice(0, limit).map((project, index) => (
           <div
             key={project.id}
-            className="w-full sm:w-4/5 sm:h-80 flex flex-col sm:flex-row gap-6 items-center p-5 bg-white shadow-xl"
+            className="w-full sm:w-full sm:h-full flex flex-col sm:flex-row gap-6 items-center p-5 bg-white shadow-xl"
             // data-aos="fade-up"
             data-aos={index % 2 === 0 ? "fade-up-right" : "fade-up-left"}
           >
@@ -108,16 +108,21 @@ export default function Projects({ limit }) {
                 alt="Project logo"
                 className="w-24 h-12"
               />
-              <p className="text-sm font-bold">{project.description}</p>
-              <div className="flex flex-wrap gap-2">
+              <p className="text-sm font-bold py-2">{project.description}</p>
+              <div className="flex flex-wrap gap-2 py-2">
                 {project.technologies.map((tech, index) => (
                   <p key={index} className="px-4 py-1 bg-gray-200 rounded-md">
                     {tech}
                   </p>
                 ))}
               </div>
-              <a href={project.links} target="_blank" rel="noopener noreferrer">
-                <FiExternalLink />
+              <a
+                className="flex flex-row items-center gap-2 py-2"
+                href={project.links}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project <FiExternalLink />
               </a>
             </div>
           </div>

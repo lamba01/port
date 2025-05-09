@@ -2,7 +2,7 @@ import React from "react";
 
 export default function StickyContactButton() {
   return (
-    <div className="fixed bottom-4 right-[-50px] -translate-x-1/2 z-50 block sm:hidden">
+    <div className="fixed bottom-4 right-[0px] -translate-x-1/2 z-50 block sm:hidden">
       <a
         href="https://johncodes.xyz/#contact"
         rel="noopener noreferrer"

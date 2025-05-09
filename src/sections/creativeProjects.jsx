@@ -1,29 +1,29 @@
 import React from "react";
 import { FiExternalLink } from "react-icons/fi";
-import shopease from "../assets/shopease.png";
-import taskmanagement from "../assets/TaskM.webp";
+import digitalbanking from "../assets/project3.jpg";
+import rps from "../assets/rps.jpg";
 
 const creativeData = [
   {
     id: 1,
-    image: shopease,
+    image: digitalbanking,
     description:
-      "An online storefront designed for small businesses — features smooth browsing, clean product displays, and a working (simulated) checkout experience.",
-    link: "https://commeercee.vercel.app",
+      "A sleek and modern digital banking landing page showcasing responsive layout, clean UI, and strong call-to-action — built to highlight features like spending, saving, and investing in one platform.",
+    link: "https://easybank-landings-pages.vercel.app/",
   },
   {
     id: 2,
-    image: taskmanagement,
+    image: rps,
     description:
-      "A user-friendly task management tool built for teams — includes secure login, real-time task updates, and project tracking.",
-    link: "https://task-managementapp-client.vercel.app/",
+      "A fun and interactive Rock, Paper, Scissors game with score tracking and responsive design — built with clean UI and smooth animations.",
+    link: "https://rpsgamers.netlify.app/",
   },
 ];
 
 export default function CreativeProjects() {
   return (
     <section className="bg-white py-[40px] sm:py-[50px] px-[20px] sm:px-[40px] w-full text-start">
-      <h2>creative projects✨</h2>
+      <h2>fun builds✨</h2>
       <main className="py-10 sm:py-10 flex flex-col gap-12 sm:gap-0 sm:flex-row justify-between">
         {creativeData.map((data) => (
           <div

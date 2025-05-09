@@ -8,6 +8,7 @@ export default function AboutSection() {
   return (
     <section className="py-[100px] w-full flex flex-col gap-20 items-center justify-center px-[20px] sm:px-[40px]">
       <div className="flex flex-col justify-center gap-3 w-full sm:w-4/5">
+        <h1 className="text-2xl text-center">About John Oluwafemi</h1>
         <h4 className="text-sm sm:text-xl text-black">
           I'm a <span className="font-semibold">Full-Stack Developer</span> who
           enjoys building clean, easy-to-use web applications. I work mostly

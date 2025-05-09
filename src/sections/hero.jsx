@@ -8,7 +8,7 @@ export default function Hero({ scrollToProjects }) {
       <img
         src={test}
         alt="John Oluwafemi - Fullstack Developer photo"
-        className="absolute top-[35%] left-1/2 -translate-x-1/2 -translate-y-1/2 h-[100px] w-[100px] md:w-[150px] md:h-[150px] object-cover rounded-full opacity-100 border-8 border-solid border-white z-10 shadow-lg hover:shadow-[0_0_20px_rgba(59,130,246,0.6)] transition transform hover:scale-105 "
+        className="absolute top-[35%] sm:top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 h-[100px] w-[100px] md:w-[150px] md:h-[150px] object-cover rounded-full opacity-100 border-8 border-solid border-white z-10 shadow-lg hover:shadow-[0_0_20px_rgba(59,130,246,0.6)] transition transform hover:scale-105 "
       />
       <div className="flex flex-col items-center gap-14 justify-center">
         <h1 className="text-6xl md:text-9xl uppercase" data-aos="fade-left">
