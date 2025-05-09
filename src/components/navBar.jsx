@@ -42,6 +42,13 @@ export default function navBar() {
         >
           contact
         </a>
+        <a
+          className="text-sm md:text-lg text-black/60 hover:text-black"
+          href="/blog"
+          rel="noopener noreferrer"
+        >
+          blog
+        </a>
       </div>
     </nav>
   );
