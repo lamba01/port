@@ -10,7 +10,6 @@ import Navbar from "./components/navBar";
 import Footer from "./components/footer";
 import ThankYou from "./pages/thankYou";
 import Blog from "./pages/blog";
-import BlogPost1 from "./pages/blogPost1";
 import StickyContactButton from "./components/stickyContactBtn";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -80,7 +79,6 @@ const App = () => {
         <Route path="/work" element={<Work />} />
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/blog-post-1" element={<BlogPost1 />} />
       </Routes>
       <Footer />
     </>

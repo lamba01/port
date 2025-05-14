@@ -86,7 +86,7 @@ const projectsData = [
 
 export default function Projects({ limit }) {
   return (
-    <section className="bg-[#f5f5f5] py-[50px] px-[20px] sm:px-[40px] text-start overflow-hidden">
+    <section className="bg-[#f5f5f5] py-[50px] px-[20px] sm:px-[40px] text-center overflow-hidden">
       <h2>{limit ? "Projects" : "Explore my work👀"}</h2>
       <p>Some of the noteworthy projects I have built</p>
       <main className="flex flex-wrap justify-center gap-20 my-6 text-start">

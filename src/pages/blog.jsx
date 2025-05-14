@@ -1,38 +1,77 @@
-import { Link } from "react-router-dom";
-
-const blogPosts = [
-  {
-    title: "Why Nonprofits Must Prioritize Their Online Presence in 2025",
-    summary:
-      "In 2025, a strong digital footprint isn't optional for nonprofits — it's essential. This post explores how a professional website, social media presence, and consistent content can build trust, attract donors, and boost community impact.",
-    slug: "/blog-post-1",
-    date: "May 2025",
-  },
-];
+import { useEffect, useState } from "react";
+import { GraphQLClient, gql } from "graphql-request";
 
 export default function Blog() {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      const endpoint = "https://gql.hashnode.com/";
+      const graphQLClient = new GraphQLClient(endpoint);
+      const query = gql`
+        query {
+          publication(host: "johnwrites.hashnode.dev") {
+            posts(first: 10) {
+              edges {
+                node {
+                  title
+                  brief
+                  slug
+                  publishedAt
+                }
+              }
+            }
+          }
+        }
+      `;
+
+      try {
+        const data = await graphQLClient.request(query);
+        console.log(data);
+        // setPosts(data.user.publication.posts);
+        setPosts(data.publication.posts.edges.map((edge) => edge.node));
+      } catch (error) {
+        console.error("Error fetching posts:", error);
+      }
+    };
+
+    fetchPosts();
+  }, []);
+
   return (
-    <div className="max-w-3xl mx-auto px-4 py-[100px]">
+    <div className="max-w-3xl mx-auto px-4 py-[100px] text-center">
       <h1 className="text-3xl font-bold">Blog</h1>
       <p className="text-gray-600 mb-8">
         Insights, ideas, and developer takes from my desk.
       </p>
-      <div className="space-y-10">
-        {blogPosts.map((post, index) => (
+      <div className="space-y-10 text-left">
+        {posts.map((post, index) => (
           <div key={index} className="border-b border-solid pb-4">
-            <Link to={post.slug}>
+            <a
+              href={`https://johnwrites.hashnode.dev/${post.slug}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <h2 className="text-xl font-semibold hover:underline">
                 {post.title}
               </h2>
-            </Link>
-            <p className="text-gray-400 text-sm italic">{post.date}</p>
-            <p className="text-gray-700 mt-2">{post.summary}</p>
-            <Link
-              to={post.slug}
+            </a>
+            <p className="text-gray-400 text-sm italic">
+              {new Date(post.publishedAt).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </p>
+            <p className="text-gray-700 mt-2">{post.brief}</p>
+            <a
+              href={`https://johnwrites.hashnode.dev/${post.slug}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block mt-3 text-sm text-blue-600 hover:underline font-medium"
             >
               Read more →
-            </Link>
+            </a>
           </div>
         ))}
       </div>
