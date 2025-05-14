@@ -27,8 +27,6 @@ export default function Blog() {
 
       try {
         const data = await graphQLClient.request(query);
-        console.log(data);
-        // setPosts(data.user.publication.posts);
         setPosts(data.publication.posts.edges.map((edge) => edge.node));
       } catch (error) {
         console.error("Error fetching posts:", error);

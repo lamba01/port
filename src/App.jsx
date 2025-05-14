@@ -60,7 +60,9 @@ const App = () => {
               "@type": "Organization",
               "name": "Freelance"
             },
-            "knowsAbout": ["React", "Node.js", "Tailwind CSS", "SEO", "SaaS", "eCommerce"],
+            "knowsAbout": ["React", "Node.js", "Tailwind CSS", "SEO", 
+            "SaaS", "eCommerce", "web development", "frontend development", 
+            "backend development", "full-stack development", "software engineering", "web developer", "developer"],
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "Lagos",
