@@ -11,7 +11,7 @@ export default function Blog() {
       const query = gql`
         query {
           publication(host: "johnwrites.hashnode.dev") {
-            posts(first: 10) {
+            posts(first: 5) {
               edges {
                 node {
                   title
