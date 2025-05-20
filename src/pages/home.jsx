@@ -7,6 +7,7 @@ import Testimonial from "../sections/testimonial";
 import CreativeProjects from "../sections/creativeProjects";
 import Tools from "../sections/tools";
 import Contact from "../sections/contact";
+import BlogPreview from "../sections/blogPreview";
 
 function Home() {
   const projectsRef = useRef(null);
@@ -40,6 +41,7 @@ function Home() {
           <Projects limit={2} />
         </div>
         <Testimonial />
+        <BlogPreview />
         <CreativeProjects />
         <Contact />
         <Tools />

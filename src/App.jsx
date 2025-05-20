@@ -49,7 +49,7 @@ const App = () => {
             "@type": "Person",
             "name": "John Oluwafemi",
             "url": "https://johncodes.xyz",
-            "image": "https://johncodes.xyz/john-oluwafemi.png",
+            "image": "https://johncodes.xyz/john-oluwafemi.jpeg",
             "sameAs": [
               "https://www.linkedin.com/in/johnmoyinoluwa/",
               "https://github.com/lamba01/"

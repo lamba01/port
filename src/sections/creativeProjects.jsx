@@ -48,7 +48,7 @@ export default function CreativeProjects() {
               href={data.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 mt-2 hover:underline text-[rgba(0,0,0,0.6)] hover:text-black"
+              className="flex items-center gap-2 mt-2 hover:underline text-blue-600 hover:opacity-80"
             >
               View Project <FiExternalLink />
             </a>
