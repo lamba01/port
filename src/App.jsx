@@ -47,9 +47,9 @@ const App = () => {
           {
             "@context": "https://schema.org",
             "@type": "Person",
-            "name": "John Moyinoluwa Oluwafemi",
+            "name": "John Oluwafemi",
             "url": "https://johncodes.xyz",
-            "image": "https://johncodes.xyz/john-oluwafemi.jpeg",
+            "image": "https://johncodes.xyz/john-oluwafemi.png",
             "sameAs": [
               "https://www.linkedin.com/in/johnmoyinoluwa/",
               "https://github.com/lamba01/"
@@ -60,7 +60,8 @@ const App = () => {
               "@type": "Organization",
               "name": "Freelance"
             },
-            "knowsAbout": ["React", "Node.js", "Tailwind CSS", "SEO", 
+            "knowsAbout": ["React", "Node.js", "Tailwind CSS", "SEO", "business websites", 
+            "landing pages", "web applications", "web design", "UI/UX design", "digital marketing", "NGO websites",
             "SaaS", "eCommerce", "web development", "frontend development", 
             "backend development", "full-stack development", "software engineering", "web developer", "developer"],
             "address": {
