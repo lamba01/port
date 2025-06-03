@@ -53,11 +53,16 @@ export default function Testimonial() {
             onMouseLeave={() => setHoveredId(null)}
           >
             <IoPersonCircle size={"4em"} />
-            <p className="font-medium py-3">{testimonial.testimony}</p>
-            <div className="text-center">
-              <p className="font-bold capitalize">{testimonial.name}</p>
-              <p className="capitalize">{testimonial.organization}</p>
+            <p className="italic text-gray-700 py-3 leading-relaxed">
+              {testimonial.testimony}
+            </p>
+            <div className="text-center mt-2">
+              <p className="font-semibold text-gray-900">{testimonial.name}</p>
+              <p className="text-sm text-gray-600">
+                {testimonial.organization}
+              </p>
             </div>
+
             {hoveredId === testimonial.id && (
               <img
                 src={testimonial.image}

@@ -2,57 +2,83 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import "aos/dist/aos.css";
 import Contact from "../sections/contact";
+import Testimonial from "../sections/testimonial";
 
 export default function NGOLandingPage() {
   return (
     <>
       <Helmet>
-        <title>NGO Website Developer – John Oluwafemi</title>
+        <title>NGO & Journal Website Developer – John Oluwafemi</title>
         <meta
           name="description"
-          content="Affordable, fast, mobile-friendly websites for NGOs. Let's build your organization's site today."
+          content="Professional, mobile-friendly websites for NGOs and academic journals. Built fast, affordably, and tailored to your mission."
         />
         <meta
           name="keywords"
-          content="NGO website, non-profit website, affordable NGO websites, mobile-friendly NGO sites, fast NGO web development"
+          content="NGO website, journal website, non-profit website, affordable NGO websites, academic journal web design, fast NGO web development"
         />
         <meta name="author" content="John Oluwafemi" />
         <meta
           property="og:title"
-          content="NGO Website Developer – John Oluwafemi"
+          content="NGO & Journal Website Developer – John Oluwafemi"
         />
         <meta
           property="og:description"
-          content="Affordable, fast, mobile-friendly websites for NGOs. Let's build your organization's site today."
+          content="Professional, mobile-friendly websites for NGOs and academic journals. Built fast, affordably, and tailored to your mission."
         />
       </Helmet>
       <div className="bg-white text-gray-800 min-h-screen flex flex-col items-center px-4 py-10">
-        <div className="max-w-3xl w-full mt-20">
+        <div className="max-w-6xl w-full mt-20">
           <h1 className="text-3xl sm:text-4xl font-bold text-center mb-6">
-            👋 Need a Website for Your Organization?
+            Websites that Make NGOs & Journals Look Credible — Without Breaking
+            the Bank
           </h1>
+
           <p className="text-lg text-center mb-8">
-            I build clean, mobile-friendly websites for NGOs and small
-            organizations — fast, affordable, and tailored to your mission.
+            You need more than just a pretty website — you need one that makes
+            your organization look credible, works on all devices, and is easy
+            to update.
           </p>
 
           <ul className="space-y-3 mb-8">
-            <li className="flex items-start gap-2">✅ Real NGO experience</li>
             <li className="flex items-start gap-2">
-              ✅ 3–5 pages + contact form + news/blog section
+              ✅ Clean, modern design tailored to NGOs or academic journals
             </li>
             <li className="flex items-start gap-2">
-              ✅ Free consultation to get started
+              ✅ Mobile-friendly & easy to manage
+            </li>
+            <li className="flex items-start gap-2">
+              ✅ Add blog/news posts without needing a developer
+            </li>
+            <li className="flex items-start gap-2">
+              ✅ Contact forms, WhatsApp chat, donation options
+            </li>
+            <li className="flex items-start gap-2">
+              ✅ Up and running in 5–10 days
             </li>
           </ul>
+          <h2 className="text-2xl font-semibold mb-4">What Clients Say</h2>
+          <div className="bg-gray-50 p-4 rounded-md shadow mb-6">
+            <p className="italic text-gray-700">
+              “John did an excellent job developing our website. The site has
+              greatly improved our online presence, making it easier for people
+              to learn about our work and stay updated. Thanks to his work, our
+              visibility on search engines has improved significantly. I highly
+              recommend John for anyone looking for a well-built and effective
+              website.”
+            </p>
+            <p className="mt-2 font-semibold text-sm text-right">
+              — Israel Orubuloye, CEO, CEPHER
+            </p>
+          </div>
 
           <Contact />
-          {/* OR divider */}
+
           <div className="text-center my-6 text-gray-500">— or —</div>
 
           <div className="text-center mb-10">
             <a
-              href="https://wa.me/234XXXXXXXXXX?text=Hi%20John%2C%20I%20need%20an%20NGO%20website"
+              href="https://wa.me/2348166009368?text=Hi%20John%2C%20I%20need%20an%20NGO%20website"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-black hover:bg-[#333333] text-white px-6 py-3 rounded-lg text-lg font-semibold transition"
@@ -103,12 +129,12 @@ export default function NGOLandingPage() {
 
           <hr className="my-8" />
 
-          <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+          <h2 className="text-2xl font-semibold mb-4">Why Work With Me?</h2>
           <p className="mb-6">
-            Hi, I’m <strong>John Oluwafemi</strong> — a student developer
-            passionate about helping mission-driven organizations get online.
-            I’ve worked with real NGOs to build fast, responsive websites that
-            look good and perform even better.
+            I’m <strong>a developer</strong> who helps nonprofits, research
+            groups, and academic journals build websites that work. I care about
+            simplicity, clarity, and helping mission-driven teams do more online
+            — with less stress.
           </p>
 
           <div className="text-center">
