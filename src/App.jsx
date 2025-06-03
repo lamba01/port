@@ -15,6 +15,10 @@ import NGOLandingPage from "./pages/ngo";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
+
+
+
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -22,6 +26,7 @@ const App = () => {
       once: false,
     });
   }, []);
+  const location = useLocation();
 
   const ScrollToHashElement = () => {
     const location = useLocation();
@@ -75,7 +80,9 @@ const App = () => {
         </script>
       </Helmet>
       <Navbar />
-      <StickyContactButton />
+      {/* <StickyContactButton /> */}
+      {/* Only show StickyContactButton if not on /ngo */}
+      {location.pathname !== "/ngo" && <StickyContactButton />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
