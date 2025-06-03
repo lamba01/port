@@ -16,9 +16,12 @@ export default function Contact() {
   return (
     <section id="contact" className="py-16 px-4 bg-[#f5f5f5]">
       <div className="max-w-2xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6">Let’s work together</h2>
+        <h2 className="text-3xl font-bold mb-6">
+          Request Your Free Website Consultation
+        </h2>
         <p className="mb-8 text-gray-600 dark:text-gray-300">
-          Have a project in mind or want to collaborate? Drop me a message.
+          Whether you're an NGO or an academic journal, fill out the form to get
+          a free consultation for your website. No commitment needed.
         </p>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-5 text-left">
@@ -53,6 +56,7 @@ export default function Contact() {
               <option value="Website">A new website</option>
               <option value="eCommerce">An eCommerce site</option>
               <option value="Redesign">Redesign my current site</option>
+              <option value="journal">An academic journal website</option>
               <option value="Other">Other</option>
             </select>
             <ValidationError
@@ -70,7 +74,7 @@ export default function Contact() {
               id="message"
               name="message"
               required
-              placeholder="Your message"
+              placeholder="Tell me about your organization and what you need..."
               rows="4"
               className="w-full px-4 py-2 border rounded-md border-black border-solid"
             />
