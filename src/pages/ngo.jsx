@@ -28,10 +28,10 @@ export default function NGOLandingPage() {
         />
       </Helmet>
       <div className="bg-white text-gray-800 min-h-screen flex flex-col items-center px-4 py-10">
-        <div className="max-w-6xl w-full mt-20">
+        <div className="max-w-5xl w-full mt-20">
           <h1 className="text-3xl sm:text-4xl font-bold text-center mb-6">
-            Websites that Make NGOs & Journals Look Credible — Without Breaking
-            the Bank
+            Websites that Make Non-profits Look Credible — Without Breaking the
+            Bank
           </h1>
 
           <p className="text-lg text-center mb-8">
