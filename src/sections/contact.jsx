@@ -17,7 +17,7 @@ export default function Contact() {
     <section id="contact" className="py-16 px-4 bg-[#f5f5f5]">
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6">
-          Request Your Free Website Consultation
+          Request Your Website Consultation
         </h2>
         <p className="mb-8 text-gray-600 dark:text-gray-300">
           Whether you're an NGO or an academic journal, fill out the form to get
@@ -25,6 +25,7 @@ export default function Contact() {
         </p>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-5 text-left">
+          {/* Email Address */}
           <div>
             <label htmlFor="email" className="block mb-1 font-medium">
               Email Address
@@ -43,21 +44,26 @@ export default function Contact() {
               errors={state.errors}
             />
           </div>
+
+          {/* Service */}
           <div>
             <label htmlFor="service" className="block mb-1 font-medium">
-              Service interested in
+              What do you need?
             </label>
             <select
               name="service"
+              id="service"
               className="w-full px-4 py-2 border rounded-md border-black border-solid"
               required
             >
-              <option value="">Select one...</option>
-              <option value="Website">A new website</option>
+              <option value="">Select a service...</option>
+              <option value="NGO Website">A website for my NGO</option>
+              <option value="Academic Journal">
+                A website for an academic journal
+              </option>
               <option value="eCommerce">An eCommerce site</option>
               <option value="Redesign">Redesign my current site</option>
-              <option value="journal">An academic journal website</option>
-              <option value="Other">Other</option>
+              <option value="Other">Something else</option>
             </select>
             <ValidationError
               prefix="Service"
@@ -66,15 +72,65 @@ export default function Contact() {
             />
           </div>
 
+          {/* Budget */}
+          <div>
+            <label htmlFor="budget" className="block mb-1 font-medium">
+              What’s your estimated budget?
+            </label>
+            <select
+              name="budget"
+              id="budget"
+              className="w-full px-4 py-2 border rounded-md border-black border-solid"
+              required
+            >
+              <option value="">Choose one...</option>
+              <option value="under-100k">Less than ₦100,000</option>
+              <option value="100k-250k">₦100,000 – ₦250,000</option>
+              <option value="250k-500k">₦250,000 – ₦500,000</option>
+              <option value="500k+">Over ₦500,000</option>
+              <option value="not-sure">Not sure yet</option>
+            </select>
+            <ValidationError
+              prefix="Budget"
+              field="budget"
+              errors={state.errors}
+            />
+          </div>
+
+          {/* Timeline */}
+          <div>
+            <label htmlFor="timeline" className="block mb-1 font-medium">
+              When do you want to launch?
+            </label>
+            <select
+              name="timeline"
+              id="timeline"
+              className="w-full px-4 py-2 border rounded-md border-black border-solid"
+              required
+            >
+              <option value="">Pick an option...</option>
+              <option value="asap">As soon as possible</option>
+              <option value="2-weeks">In 1–2 weeks</option>
+              <option value="1-month">In 3–4 weeks</option>
+              <option value="flexible">No fixed timeline</option>
+            </select>
+            <ValidationError
+              prefix="Timeline"
+              field="timeline"
+              errors={state.errors}
+            />
+          </div>
+
+          {/* Message */}
           <div>
             <label htmlFor="message" className="block mb-1 font-medium">
-              Message
+              Tell me about your organization or project
             </label>
             <textarea
               id="message"
               name="message"
               required
-              placeholder="Tell me about your organization and what you need..."
+              placeholder="Briefly describe what you do and what you’re hoping to build..."
               rows="4"
               className="w-full px-4 py-2 border rounded-md border-black border-solid"
             />
@@ -85,6 +141,7 @@ export default function Contact() {
             />
           </div>
 
+          {/* Submit */}
           <button
             type="submit"
             disabled={state.submitting}
