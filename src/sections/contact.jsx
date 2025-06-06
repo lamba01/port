@@ -84,11 +84,10 @@ export default function Contact() {
               required
             >
               <option value="">Choose one...</option>
-              <option value="under-100k">Less than ₦100,000</option>
-              <option value="100k-250k">₦100,000 – ₦250,000</option>
-              <option value="250k-500k">₦250,000 – ₦500,000</option>
-              <option value="500k+">Over ₦500,000</option>
-              <option value="not-sure">Not sure yet</option>
+              <option value="under-100k">Less than $100</option>
+              <option value="100k-250k">$100 – $250</option>
+              <option value="250k-500k">$300–$500</option>
+              <option value="500k+">$500+</option>
             </select>
             <ValidationError
               prefix="Budget"
@@ -109,7 +108,6 @@ export default function Contact() {
               required
             >
               <option value="">Pick an option...</option>
-              <option value="asap">As soon as possible</option>
               <option value="2-weeks">In 1–2 weeks</option>
               <option value="1-month">In 3–4 weeks</option>
               <option value="flexible">No fixed timeline</option>
