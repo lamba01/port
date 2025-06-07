@@ -30,7 +30,7 @@ export default function NGOLandingPage() {
       <div className="bg-white text-gray-800 min-h-screen flex flex-col items-center px-4 py-10">
         <div className="max-w-5xl w-full mt-14">
           <h1 className="text-3xl sm:text-4xl font-bold text-center mb-4">
-            Credible, Affordable Websites for NGOs & Journals — In Just 10 Days
+            Credible, Affordable Websites for NGOs — In Just 10 Days
           </h1>
 
           <p className="text-lg text-center mb-6">

@@ -61,9 +61,8 @@ export default function Contact() {
               <option value="Academic Journal">
                 A website for an academic journal
               </option>
-              <option value="eCommerce">An eCommerce site</option>
+              <option value="Landing Page">A landing page</option>
               <option value="Redesign">Redesign my current site</option>
-              <option value="Other">Something else</option>
             </select>
             <ValidationError
               prefix="Service"
