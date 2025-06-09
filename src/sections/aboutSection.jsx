@@ -2,7 +2,7 @@ import React from "react";
 import img1 from "../assets/img1.jpeg";
 import img2 from "../assets/img2.jpeg";
 import img3 from "../assets/img3.jpeg";
-import img4 from "../assets/img4.jpeg";
+import img4 from "../assets/IMG_7612.jpeg";
 
 export default function AboutSection() {
   return (
@@ -56,7 +56,7 @@ export default function AboutSection() {
           data-aos-delay="200"
           src={img4}
           className="sm:w-[30%] rounded-xl "
-          alt="twitter profile"
+          alt="workspace"
         />
         <img
           data-aos="fade-up"
