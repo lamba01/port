@@ -1,15 +1,16 @@
 import React from "react";
 import { FiExternalLink } from "react-icons/fi";
-import digitalbanking from "../assets/project3.jpg";
+// import digitalbanking from "../assets/project3.jpg";
 import rps from "../assets/rps.jpg";
+import skewing from "../assets/skewings.png";
 
 const creativeData = [
   {
     id: 1,
-    image: digitalbanking,
+    image: skewing,
     description:
-      "A sleek and modern digital banking landing page showcasing responsive layout, clean UI, and strong call-to-action — built to highlight features like spending, saving, and investing in one platform.",
-    link: "https://easybank-landings-pages.vercel.app/",
+      "Fully responsive, modern travel landing page designed to attract and convert visitors interested in vacation planning and tour packages. The site emphasizes clean UI, smooth animations, and mobile-first responsiveness ",
+    link: "https://skewings.vercel.app/",
   },
   {
     id: 2,
