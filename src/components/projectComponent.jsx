@@ -117,7 +117,7 @@ export default function Projects({ limit }) {
                 ))}
               </div>
               <a
-                className="flex flex-row items-center gap-2 py-2"
+                className="flex flex-row items-center gap-2 py-2 text-blue-600"
                 href={project.links}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -129,7 +129,14 @@ export default function Projects({ limit }) {
         ))}
         {limit && (
           <Link to={`/projects`}>
-            <button className="bg-gradient-to-tr from-blue-700 to-blue-900 text-white cursor-pointer py-3 px-8 sm:w-[250px] w-[90vw] hover:bg-[#333333]">
+            <button
+              className="bg-gradient-to-tr from-blue-700 to-blue-900 text-white cursor-pointer py-3 px-8 sm:w-[250px] w-[90vw] hover:bg-[#333333]"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to top right, #2563eb, #1e3a8a)",
+                backgroundColor: "#2563eb", // fallback solid color
+              }}
+            >
               view all projects{" "}
             </button>
           </Link>

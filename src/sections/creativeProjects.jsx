@@ -31,6 +31,11 @@ export default function CreativeProjects() {
             key={data.id}
             className="border-[#f5f5f5] border-2 border-solid rounded-xl w-full sm:w-[48%] p-5 relative group"
             data-aos="fade-up"
+            style={{
+              backgroundImage:
+                "linear-gradient(to bottom right, #2563eb, #1e3a8a)",
+              backgroundColor: "#2563eb", // fallback solid color
+            }}
           >
             <a
               href={data.link}
@@ -44,12 +49,12 @@ export default function CreativeProjects() {
                 className="sm:h-[300px] w-full h-[250px] rounded-xl transition-transform group-hover:scale-105"
               />
             </a>
-            <h5 className="mt-3">{data.description}</h5>
+            <h5 className="mt-3 text-white">{data.description}</h5>
             <a
               href={data.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 mt-2 hover:underline text-blue-600 hover:opacity-80"
+              className="flex items-center gap-2 mt-2 hover:underline text-white/80 hover:opacity-80"
             >
               View Project <FiExternalLink />
             </a>

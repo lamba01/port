@@ -2,29 +2,30 @@ import React, { useState } from "react";
 import { IoPersonCircle } from "react-icons/io5";
 import njshImage from "../assets/project2.png";
 import cepherImage from "../assets/project1.png";
+import { FaQuoteLeft } from "react-icons/fa6";
 
 const testimonialData = [
   {
     id: 1,
-    testimony: `"John was hired to develop a website for the Nigerian Journal of
+    testimony: `John was hired to develop a website for the Nigerian Journal of
              Social Sciences, aside from the fact that he delivered to time lag,
              the website is professional and responsive to the request of
              intending authors. Publishing with the Journal is easier as
              procedures for uploading a manuscript for consideration for
              publication is made self explanatory by the responsive website
              developed by John. Without any reservation, I recommend for those
-             that will require his services now and in the future"`,
+             that will require his services now and in the future`,
     name: "Prof Femi Tinuola",
     organization: "Editor-in-Chief, NJSH",
     image: njshImage,
   },
   {
     id: 2,
-    testimony: `"John did an excellent job developing our website. The site has greatly improved our online presence,
+    testimony: `John did an excellent job developing our website. The site has greatly improved our online presence,
      making it easier for people to learn about our work and stay updated on our activities.
      Thanks to his work, we now reach a wider audience, and our visibility on search engines has improved
      significantly. The website has been a valuable tool in helping us share our research and connect with
-     more people. I highly recommend John for anyone looking for a well-built and effective website."`,
+     more people. I highly recommend John for anyone looking for a well-built and effective website.`,
     name: "Prof Israel Orubuloye",
     organization: "CEO, CEPHER",
     image: cepherImage,
@@ -58,6 +59,7 @@ export default function Testimonial() {
           >
             <IoPersonCircle size={"4em"} color="white" />
             <span className="italic text-white text-xl py-3 leading-relaxed">
+              <FaQuoteLeft className="inline mr-2" />
               {testimonial.testimony}
             </span>
             <div className="text-center mt-2">

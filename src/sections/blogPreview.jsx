@@ -43,11 +43,11 @@ export default function BlogPreview() {
       <h2 className="text-2xl font-bold text-center mb-6">
         Latest from the Blog
       </h2>
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gap-10">
         {posts.map((post, index) => (
           <div
             key={index}
-            className="border rounded-lg p-5 shadow-sm hover:shadow-md transition"
+            className="border border-solid rounded-lg p-5 shadow-sm hover:shadow-md transition"
           >
             <a
               href={`https://johnwrites.hashnode.dev/${post.slug}`}

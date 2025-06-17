@@ -5,7 +5,7 @@ export default function HireMe() {
     <section
       className="w-full py-20 px-6 sm:px-12 text-white bg-linear-to-tl from-blue-700 to-blue-900 hover:from-blue-600 hover:to-blue-800 flex flex-col justify-center items-center gap-10"
       style={{
-        backgroundImage: "linear-gradient(to top left, #2563eb, #1e3a8a)",
+        backgroundImage: "linear-gradient(to top , #1D4ED8, #1e3a8a)",
         backgroundColor: "#2563eb", // fallback solid color
       }}
     >
@@ -23,7 +23,7 @@ export default function HireMe() {
           <h4 className="text-xl font-medium mb-4">
             ✅ Business-Focused Solutions
           </h4>
-          <span>
+          <span className="text-white/80">
             I build websites that do more than just look good — they help your
             business grow. Whether it’s eCommerce, appointment systems, or
             company portfolios, I focus on functionality and results.
@@ -33,7 +33,7 @@ export default function HireMe() {
           <h4 className="text-xl font-medium mb-2">
             ✅ End-to-End Development
           </h4>
-          <span>
+          <span className="text-white/80">
             From front-end design to back-end logic and database integration, I
             handle the full stack so you don’t need to hire multiple developers.
           </span>
@@ -42,7 +42,7 @@ export default function HireMe() {
           <h4 className="text-xl font-medium mb-2">
             ✅ Fast & Mobile-Friendly
           </h4>
-          <span>
+          <span className="text-white/80">
             Your site will be fast, mobile-optimized, and user-friendly — giving
             your customers a great experience on any device.
           </span>
@@ -51,7 +51,7 @@ export default function HireMe() {
           <h4 className="text-xl font-medium mb-2">
             ✅ Easy to Update & Manage
           </h4>
-          <span>
+          <span className="text-white/80">
             Need to make content changes or upload new products? I can integrate
             a CMS or admin dashboard so you can manage your site without needing
             a developer every time.

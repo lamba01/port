@@ -142,7 +142,11 @@ export default function Contact() {
           <button
             type="submit"
             disabled={state.submitting}
-            className="bg-black text-white px-6 py-2 rounded-md hover:bg-[#333333] transition cursor-pointer"
+            className="text-white px-6 py-2 rounded-md hover:bg-[#333333] transition cursor-pointer"
+            style={{
+              backgroundImage: "linear-gradient(to top , #1D4ED8, #1e3a8a)",
+              backgroundColor: "#2563eb", // fallback solid color
+            }}
           >
             {state.submitting ? "Sending..." : "Send Message"}
           </button>
