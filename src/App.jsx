@@ -12,6 +12,7 @@ import ThankYou from "./pages/thankYou";
 import Blog from "./pages/blog";
 import StickyContactButton from "./components/stickyContactBtn";
 import NGOLandingPage from "./pages/ngo";
+import BusinessLandingPage from "./pages/business";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -87,6 +88,7 @@ const App = () => {
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/ngo" element={<NGOLandingPage />} />
+        <Route path="/business" element={<BusinessLandingPage />} />
       </Routes>
       <Footer />
     </>

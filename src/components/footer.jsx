@@ -2,6 +2,10 @@ import React from "react";
 import { BsTwitterX } from "react-icons/bs";
 import { SiFrontendmentor } from "react-icons/si";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -18,41 +22,60 @@ export default function Footer() {
         </a>
       </div>
       <aside className="text-center">
-        <div className="flex gap-6">
-          <div className="h-[40px] w-[40px] rounded-[50%] bg-white/60 hover:bg-white flex items-center justify-center cursor-pointer">
+        <div className="flex gap-6 shadow-lg bg-white border-[#F0F0F0] border-2 px-6 py-3 rounded-4xl">
+          <h2 className="text-lg font-semibold capitalize">follow</h2>
+          <div className="flex gap-2 items-center justify-center">
             <a
-              href="https://x.com/lambacodes"
+              href="https://twitter.com/lambacodes"
               target="_blank"
               rel="noopener noreferrer"
+              className="w-8 h-8 flex items-center justify-center rounded-full  hover:opacity-70 text-white shadow-lg transition-transform transform"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to top left, #2563eb, #1e3a8a)",
+                backgroundColor: "#2563eb", // fallback solid color
+              }}
             >
-              <BsTwitterX color="black" />
+              <BsTwitterX size={20} />
             </a>
-          </div>
-          <div className="h-[40px] w-[40px] rounded-[50%] bg-white/60 hover:bg-white flex items-center justify-center cursor-pointer">
             <a
               href="https://frontendmentor.io/profile/lamba01"
               target="_blank"
               rel="noopener noreferrer"
+              className="w-8 h-8 flex items-center justify-center rounded-full  hover:opacity-70 text-white shadow-lg transition-transform transform"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to top left, #2563eb, #1e3a8a)",
+                backgroundColor: "#2563eb", // fallback solid color
+              }}
             >
-              <SiFrontendmentor color="black" />
+              <SiFrontendmentor size={20} />
             </a>
-          </div>
-          <div className="h-[40px] w-[40px] rounded-[50%] bg-white/60 hover:bg-white flex items-center justify-center cursor-pointer">
-            <a
-              href="'https://github.com/lamba01"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub color="black" />
-            </a>
-          </div>
-          <div className="h-[40px] w-[40px] rounded-[50%] bg-white/60 hover:bg-white flex items-center justify-center cursor-pointer">
             <a
               href="https://www.linkedin.com/in/johnmoyinoluwa/"
               target="_blank"
               rel="noopener noreferrer"
+              className="w-8 h-8 flex items-center justify-center rounded-full  hover:opacity-70 text-white shadow-lg transition-transform transform"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to top left, #2563eb, #1e3a8a)",
+                backgroundColor: "#2563eb", // fallback solid color
+              }}
             >
-              <FaLinkedin color="black" />
+              <FaLinkedin size={20} />
+            </a>
+            <a
+              href="https://github.com/lamba01"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-8 h-8 flex items-center justify-center rounded-full  hover:opacity-70 text-white shadow-lg transition-transform transform"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to top left, #2563eb, #1e3a8a)",
+                backgroundColor: "#2563eb", // fallback solid color
+              }}
+            >
+              <FaGithub size={20} />
             </a>
           </div>
         </div>

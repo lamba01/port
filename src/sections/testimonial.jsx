@@ -35,30 +35,36 @@ export default function Testimonial() {
   const [hoveredId, setHoveredId] = useState(null);
 
   return (
-    <section className="bg-[#f5f5f5] py-[50px] px-[20px] sm:px-[40px] w-full text-start overflow-hidden">
+    <section className=" py-[50px] px-[20px] sm:px-[40px] w-full text-start overflow-hidden">
       <h2 className="text-2xl" data-aos="fade-up">
         Highly Rated ⭐
       </h2>
       <p data-aos="fade-up">Expect nothing but perfection working with me</p>
       <main
         className="w-full flex flex-col sm:flex-row items-center justify-between py-16 sm:py-10 gap-10 sm:gap-0"
-        data-aos="fade-up"
+        data-aos="flip-right"
         data-aos-delay="700"
       >
         {testimonialData.map((testimonial) => (
           <div
             key={testimonial.id}
-            className="relative w-[100%] sm:w-[48%] bg-white rounded-xl text-start flex flex-col items-center px-5 py-3 shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="relative w-[100%] sm:w-[48%] rounded-xl text-start flex flex-col items-center px-5 py-3 shadow-lg hover:shadow-xl transition-shadow duration-300"
+            style={{
+              backgroundImage: "linear-gradient(to top, #2563eb, #1e3a8a)",
+              backgroundColor: "#2563eb", // fallback solid color
+            }}
             onMouseEnter={() => setHoveredId(testimonial.id)}
             onMouseLeave={() => setHoveredId(null)}
           >
-            <IoPersonCircle size={"4em"} />
-            <p className="italic text-gray-700 py-3 leading-relaxed">
+            <IoPersonCircle size={"4em"} color="white" />
+            <span className="italic text-white text-xl py-3 leading-relaxed">
               {testimonial.testimony}
-            </p>
+            </span>
             <div className="text-center mt-2">
-              <p className="font-semibold text-gray-900">{testimonial.name}</p>
-              <p className="text-sm text-gray-600">
+              <span className="font-semibold text-white">
+                {testimonial.name}
+              </span>
+              <p className="text-sm text-white/50">
                 {testimonial.organization}
               </p>
             </div>
