@@ -20,8 +20,9 @@ export default function Contact() {
           Request Your Website Consultation
         </h2>
         <p className="mb-8 text-gray-600 dark:text-gray-300">
-          Whether you're an NGO or an academic journal, fill out the form to get
-          a free consultation for your website. No commitment needed.
+          Whether you run an online store, a salon, or a coaching business —
+          fill out this form to request a free consultation. Let’s build a
+          website that works for you.
         </p>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-5 text-left">
@@ -57,12 +58,12 @@ export default function Contact() {
               required
             >
               <option value="">Select a service...</option>
-              <option value="NGO Website">A website for my NGO</option>
-              <option value="Academic Journal">
-                A website for an academic journal
+              <option value="eCommerce Website">eCommerce Website</option>
+              <option value="Booking Website">
+                Booking / Appointment Website
               </option>
-              <option value="Landing Page">A landing page</option>
-              <option value="Redesign">Redesign my current site</option>
+              <option value="Landing Page">Landing Page</option>
+              <option value="Site Redesign">Redesign My Current Site</option>
             </select>
             <ValidationError
               prefix="Service"
@@ -83,10 +84,10 @@ export default function Contact() {
               required
             >
               <option value="">Choose one...</option>
-              <option value="under-100k">Less than $100</option>
-              <option value="100k-250k">$100 – $250</option>
-              <option value="250k-500k">$300–$500</option>
-              <option value="500k+">$500+</option>
+              <option value="under $100">Less than $100</option>
+              <option value="100$-$250">$100 – $250</option>
+              <option value="$300-$500">$300–$500</option>
+              <option value="$500+">$500+</option>
             </select>
             <ValidationError
               prefix="Budget"

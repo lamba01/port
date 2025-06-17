@@ -146,6 +146,21 @@ export default function BusinessLandingPage() {
               </strong>{" "}
               – Informational website for a health research organization
             </li>
+            <li>
+              <strong>
+                <a
+                  href="https://skewings.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 transition"
+                >
+                  Skewings Landing Page
+                </a>
+              </strong>{" "}
+              – Fully responsive, modern travel landing page designed to attract
+              and convert visitors interested in vacation planning and tour
+              packages.
+            </li>
           </ul>
 
           <hr className="my-8" />

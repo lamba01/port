@@ -78,8 +78,8 @@ const App = () => {
       </Helmet>
       <Navbar />
       {/* <StickyContactButton /> */}
-      {/* Only show StickyContactButton if not on /ngo */}
-      {location.pathname !== "/ngo" && <StickyContactButton />}
+      {/* Only show StickyContactButton if not on /business */}
+      {location.pathname !== "/business" && <StickyContactButton />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
