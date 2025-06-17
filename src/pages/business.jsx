@@ -1,129 +1,201 @@
 import React from "react";
+import { Helmet } from "react-helmet";
+import "aos/dist/aos.css";
+import Contact from "../sections/contact";
+import { FaQuoteLeft } from "react-icons/fa6";
 
 export default function BusinessLandingPage() {
   return (
-    <main className="bg-white text-black min-h-screen ">
-      <section className="text-center py-24 px-6 ">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          High-Converting Websites for Small Businesses
-        </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto">
-          Whether you run an online store or manage bookings, I help you get
-          more customers with fast, mobile-friendly websites built to convert
-          customers.
-        </p>
-      </section>
+    <>
+      <Helmet>
+        <title>eCommerce & Booking Website Developer – John Oluwafemi</title>
+        <meta
+          name="description"
+          content="Sell more and book faster with a conversion-optimized website — clean, mobile-ready, and built to grow your business."
+        />
+        <meta
+          name="keywords"
+          content="ecommerce website, booking website, business website, online store, appointment website developer"
+        />
+        <meta name="author" content="John Oluwafemi" />
+        <meta
+          property="og:title"
+          content="eCommerce & Booking Website Developer – John Oluwafemi"
+        />
+        <meta
+          property="og:description"
+          content="Conversion-focused websites for eCommerce and appointment-based businesses. Fast delivery, mobile-ready, and easy to manage."
+        />
+      </Helmet>
 
-      <section className="bg-gray-100 py-12 px-6">
-        <h2 className="text-2xl font-semibold text-center mb-8">
-          Who This Is For
-        </h2>
-        <ul className="max-w-3xl mx-auto grid gap-6 md:grid-cols-2 text-left list-disc pl-6">
-          <li>
-            Salon owners who want clients to easily book appointments online
-          </li>
-          <li>
-            Retailers or brand owners looking to sell through an eCommerce site
-          </li>
-          <li>
-            Coaches or professionals who need a streamlined booking system
-          </li>
-          <li>
-            Service-based businesses wanting a simple way to get inquiries
-          </li>
-        </ul>
-      </section>
+      <div className="bg-white text-gray-800 min-h-screen flex flex-col items-center px-4 py-10">
+        <div className="max-w-5xl w-full mt-14">
+          <h1 className="text-3xl sm:text-4xl font-bold text-center mb-4">
+            Turn Visitors Into Buyers — Conversion Focused Websites for Small
+            Businesses
+          </h1>
 
-      <section className="py-12 px-6">
-        <h2 className="text-2xl font-semibold text-center mb-8">
-          What You’ll Get
-        </h2>
-        <div className="max-w-4xl mx-auto grid gap-6 md:grid-cols-2">
-          <div className="bg-white p-6 rounded-lg shadow border">
-            <h3 className="text-xl font-bold mb-2">Mobile-Optimized Design</h3>
-            <p>
-              Look great and work fast on all devices—phones, tablets, and
-              desktops.
-            </p>
+          <p className="text-lg text-center mb-6">
+            You don’t just need a pretty site. You need one that drives sales,
+            books appointments, and builds customer trust — without the
+            headaches of clunky site builders or unreliable developers.
+          </p>
+
+          {/* FAST CTA */}
+          <div className="text-center mb-14">
+            <a
+              href="https://wa.me/2348166009368?text=Hi%20John%2C%20I%20need%20a%20website%20for%20my%20business"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="hover:opacity-80 text-white px-6 py-3 rounded-lg text-lg font-semibold transition"
+              style={{
+                backgroundImage: "linear-gradient(to top, #2563eb, #1e3a8a)",
+                backgroundColor: "#2563eb", // fallback solid color
+              }}
+            >
+              💬 Start Your Website on WhatsApp
+            </a>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow border">
-            <h3 className="text-xl font-bold mb-2">Fast Loading Speed</h3>
-            <p>Blazing-fast performance so visitors don’t drop off.</p>
+
+          {/* VALUE BULLETS */}
+          <ul className="space-y-5 mb-8 text-base">
+            <li>
+              🛒 Modern eCommerce or booking system tailored to your business
+            </li>
+            <li>📱 Mobile-friendly and lightning-fast performance</li>
+            <li>
+              🧑‍💻 Admin dashboard to manage your products, bookings, or services
+            </li>
+            <li>
+              💬 Built-in WhatsApp chat, contact forms & payment integration
+            </li>
+            <li>🚀 Delivered and live in 10-15 days</li>
+          </ul>
+
+          <div className="text-sm text-gray-500 text-center mb-12">
+            ✅ Trusted by growing businesses | 🚀 5+ years experience | 💡
+            Focused on results & clarity
           </div>
-          <div className="bg-white p-6 rounded-lg shadow border">
-            <h3 className="text-xl font-bold mb-2">Contact or Booking Forms</h3>
-            <p>
-              Easy-to-use forms that convert visitors into leads or bookings.
-            </p>
+
+          {/* TESTIMONIAL */}
+          <h2 className="text-2xl font-semibold mb-4">Client Feedback</h2>
+          <div
+            className="p-4 rounded-md shadow mb-12"
+            style={{
+              backgroundImage: "linear-gradient(to top left, #2563eb, #1e3a8a)",
+              backgroundColor: "#2563eb", // fallback solid color
+            }}
+          >
+            <span className="italic font-semibold text-white text-lg">
+              <FaQuoteLeft className="inline mr-2" />
+              John did an excellent job developing our website. The site has
+              greatly improved our online presence, making it easier for people
+              to learn about our work and stay updated. Thanks to his work, our
+              visibility on search engines has improved significantly.
+            </span>
+            <span className="mt-2 font-semibold text-sm text-right block text-white/85">
+              — Israel Orubuloye, CEO, CEPHER
+            </span>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow border">
-            <h3 className="text-xl font-bold mb-2">
-              Admin Dashboard (Optional)
-            </h3>
-            <p>Manage products, services, bookings, and inquiries easily.</p>
+
+          {/* CONTACT FORM */}
+          <Contact />
+
+          <hr className="my-8" />
+
+          {/* PORTFOLIO */}
+          <h2 className="text-2xl font-semibold mb-4">Recent Projects</h2>
+          <ul className="space-y-4 mb-8">
+            <li>
+              <strong>
+                <a
+                  href="https://commeercee.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 transition"
+                >
+                  ShopEase
+                </a>
+              </strong>{" "}
+              – Online clothing store with full shopping cart and payment
+              integration
+            </li>
+            <li>
+              <strong>
+                <a
+                  href="https://airbox-asessment.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 transition"
+                >
+                  Glam Beauty Studio
+                </a>
+              </strong>{" "}
+              – Booking platform for small service-based businesses
+            </li>
+            <li>
+              <strong>
+                <a
+                  href="https://www.cepher.org.ng/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 transition"
+                >
+                  Centre for Population and Health Research
+                </a>
+              </strong>{" "}
+              – Informational website for a health research organization
+            </li>
+          </ul>
+
+          <hr className="my-8" />
+
+          {/* ABOUT YOU */}
+          <div
+            className="px-3 py-8 text-white"
+            style={{
+              backgroundImage: "linear-gradient(to top, #2563eb, #1e3a8a)",
+              backgroundColor: "#2563eb", // fallback solid color
+            }}
+          >
+            <h1 className="text-2xl font-semibold mb-4">Why Work With Me?</h1>
+            <span className="mb-6 block">
+              I’m <strong>John Oluwafemi</strong>, a full-stack web developer
+              helping business owners turn visitors into customers. I focus on
+              speed, clarity, and making your site do more than just look good —
+              I make it work for you.{" "}
+              <span className="block mt-2 font-bold">
+                ⚡️ Only 2 project slots available this month
+              </span>
+            </span>
+
+            <div className="text-center">
+              <a
+                href="https://johncodes.xyz"
+                className="bg-white text-black px-6 py-3 rounded-lg hover:bg-white/80 transition"
+              >
+                View My Portfolio
+              </a>
+            </div>
           </div>
+          <p className="text-center text-lg text-gray-500 mb-6">
+            Built with: React • Tailwind CSS
+          </p>
+          <h2 className="text-xl font-semibold mb-4">FAQs</h2>
+          <ul className="space-y-4 text-base text-gray-700 mb-8">
+            <li>
+              <strong>How long does it take?</strong> <br />
+              Most sites are delivered and live in 10–15 days depending on your
+              content readiness.
+            </li>
+            <li>
+              <strong>Can I update the site myself later?</strong> <br />
+              Yes — you'll get an admin panel and short training on how to
+              update products or content.
+            </li>
+          </ul>
         </div>
-      </section>
-
-      <section className="py-12 px-6 bg-gray-50">
-        <h2 className="text-2xl font-semibold text-center mb-8">Contact Me</h2>
-        <form
-          action="https://formspree.io/f/your-id"
-          method="POST"
-          className="max-w-xl mx-auto grid gap-4"
-        >
-          <input
-            type="text"
-            name="name"
-            required
-            placeholder="Your Name"
-            className="border border-black rounded-md p-3 w-full"
-          />
-          <input
-            type="email"
-            name="email"
-            required
-            placeholder="Your Email"
-            className="border border-black rounded-md p-3 w-full"
-          />
-          <select
-            name="service"
-            required
-            className="border border-black rounded-md p-3 w-full"
-          >
-            <option value="">What do you need?</option>
-            <option value="ecommerce">eCommerce Website</option>
-            <option value="booking">Booking Website</option>
-            <option value="redesign">Redesign Existing Website</option>
-            <option value="other">Other</option>
-          </select>
-          <textarea
-            name="message"
-            rows="4"
-            required
-            placeholder="Tell me what you're looking for..."
-            className="border border-black rounded-md p-3 w-full"
-          ></textarea>
-          <button
-            type="submit"
-            className="bg-black text-white py-3 px-6 rounded-md hover:bg-gray-800"
-          >
-            Send Message
-          </button>
-        </form>
-      </section>
-
-      <section className="py-12 px-6 text-center">
-        <p className="text-lg">
-          Want to see examples?{" "}
-          <a
-            href="https://johncodes.xyz/#projects"
-            className="text-blue-600 underline hover:text-blue-800"
-          >
-            View my portfolio
-          </a>
-        </p>
-      </section>
-    </main>
+      </div>
+    </>
   );
 }
