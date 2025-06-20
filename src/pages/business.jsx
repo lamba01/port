@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import "aos/dist/aos.css";
 import Contact from "../sections/contact";
+import Blog from "../sections/blogPreview";
 import { FaQuoteLeft } from "react-icons/fa6";
 
 export default function BusinessLandingPage() {
@@ -31,14 +32,13 @@ export default function BusinessLandingPage() {
       <div className="bg-white text-gray-800 min-h-screen flex flex-col items-center px-4 py-10">
         <div className="max-w-5xl w-full mt-14">
           <h1 className="text-3xl sm:text-4xl font-bold text-center mb-4">
-            Turn Visitors Into Buyers — Conversion Focused Websites for Small
-            Businesses
+            Websites That Bring You Customers — Not Just Clicks
           </h1>
 
-          <p className="text-lg text-center mb-6">
-            You don’t just need a pretty site. You need one that drives sales,
-            books appointments, and builds customer trust — without the
-            headaches of clunky site builders or unreliable developers.
+          <p className="text-lg text-center mb-6 sm:px-24">
+            I help small businesses launch professional, stress-free websites
+            that show up on Google, build trust fast, and actually turn visitors
+            into <strong>paying customers</strong>.
           </p>
 
           {/* FAST CTA */}
@@ -196,6 +196,7 @@ export default function BusinessLandingPage() {
           <p className="text-center text-lg text-gray-500 mb-6">
             Built with: React • Tailwind CSS
           </p>
+          <Blog />
           <h2 className="text-xl font-semibold mb-4">FAQs</h2>
           <ul className="space-y-4 text-base text-gray-700 mb-8">
             <li>
