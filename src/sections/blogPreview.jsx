@@ -11,7 +11,7 @@ export default function BlogPreview() {
       const query = gql`
         query {
           publication(host: "johnwrites.hashnode.dev") {
-            posts(first: 2) {
+            posts(first: 5) {
               edges {
                 node {
                   title
@@ -27,7 +27,13 @@ export default function BlogPreview() {
 
       try {
         const data = await graphQLClient.request(query);
-        setPosts(data.publication.posts.edges.map((edge) => edge.node));
+
+        const sortedPosts = data.publication.posts.edges
+          .map((edge) => edge.node)
+          .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
+          .slice(0, 2); // Get the latest 2 posts
+
+        setPosts(sortedPosts);
       } catch (error) {
         console.error("Error fetching preview posts:", error);
       }
