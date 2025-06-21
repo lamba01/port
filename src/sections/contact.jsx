@@ -1,17 +1,29 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { useNavigate } from "react-router-dom";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("xoveyvay");
   const navigate = useNavigate();
+  const [captchaToken, setCaptchaToken] = useState("");
 
-  // Redirect after successful submission
+  const handleCaptchaChange = (token) => {
+    setCaptchaToken(token);
+  };
+
   useEffect(() => {
     if (state.succeeded) {
       navigate("/thank-you");
     }
   }, [state.succeeded, navigate]);
+
+  const handleFinalSubmit = (e) => {
+    if (!captchaToken) {
+      e.preventDefault();
+      alert("Please complete the CAPTCHA before submitting.");
+    }
+  };
 
   return (
     <section id="contact" className="py-16 px-4 bg-[#f5f5f5]">
@@ -25,8 +37,14 @@ export default function Contact() {
           website that works for you.
         </p>
 
-        <form onSubmit={handleSubmit} className="flex flex-col gap-5 text-left">
-          {/* Email Address */}
+        <form
+          onSubmit={(e) => {
+            handleFinalSubmit(e);
+            handleSubmit(e);
+          }}
+          className="flex flex-col gap-5 text-left"
+        >
+          {/* Email */}
           <div>
             <label htmlFor="email" className="block mb-1 font-medium">
               Email Address
@@ -54,8 +72,8 @@ export default function Contact() {
             <select
               name="service"
               id="service"
-              className="w-full px-4 py-2 border rounded-md border-black border-solid"
               required
+              className="w-full px-4 py-2 border rounded-md border-black border-solid"
             >
               <option value="">Select a service...</option>
               <option value="eCommerce Website">eCommerce Website</option>
@@ -80,8 +98,8 @@ export default function Contact() {
             <select
               name="budget"
               id="budget"
-              className="w-full px-4 py-2 border rounded-md border-black border-solid"
               required
+              className="w-full px-4 py-2 border rounded-md border-black border-solid"
             >
               <option value="">Choose one...</option>
               <option value="under $100">Less than $100</option>
@@ -104,8 +122,8 @@ export default function Contact() {
             <select
               name="timeline"
               id="timeline"
-              className="w-full px-4 py-2 border rounded-md border-black border-solid"
               required
+              className="w-full px-4 py-2 border rounded-md border-black border-solid"
             >
               <option value="">Pick an option...</option>
               <option value="2-weeks">In 1–2 weeks</option>
@@ -139,6 +157,12 @@ export default function Contact() {
             />
           </div>
 
+          {/* reCAPTCHA */}
+          <ReCAPTCHA
+            sitekey="6LeicWgrAAAAAHom-_sOCiB80OtLLRWylR3LLTdq"
+            onChange={handleCaptchaChange}
+          />
+
           {/* Submit */}
           <button
             type="submit"
@@ -146,7 +170,7 @@ export default function Contact() {
             className="text-white px-6 py-2 rounded-md hover:bg-[#333333] transition cursor-pointer"
             style={{
               backgroundImage: "linear-gradient(to top , #1D4ED8, #1e3a8a)",
-              backgroundColor: "#2563eb", // fallback solid color
+              backgroundColor: "#2563eb",
             }}
           >
             {state.submitting ? "Sending..." : "Send Message"}
