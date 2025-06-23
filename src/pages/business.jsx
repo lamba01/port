@@ -44,16 +44,16 @@ export default function BusinessLandingPage() {
           {/* FAST CTA */}
           <div className="text-center mb-14">
             <a
-              href="https://wa.me/2348166009368?text=Hi%20John%2C%20I%20need%20a%20website%20for%20my%20business"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
+              href="#contact"
+              // href="https://wa.me/2348166009368?text=Hi%20John%2C%20I%20need%20a%20website%20for%20my%20business"
+
               className="hover:opacity-80 text-white px-6 py-3 rounded-lg text-lg font-semibold transition"
               style={{
                 backgroundImage: "linear-gradient(to top, #2563eb, #1e3a8a)",
                 backgroundColor: "#2563eb", // fallback solid color
               }}
             >
-              💬 Start Your Website on WhatsApp
+              💬 Start Your Website
             </a>
           </div>
 
