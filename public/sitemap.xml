@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://johncodes.xyz/</loc>
+  </url>
+
+  <url>
+    <loc>https://johncodes.xyz/business</loc>
+  </url>
+
+  <url>
+    <loc>https://johncodes.xyz/ngo</loc>
+  </url> 
+
+  <url>
+    <loc>https://johncodes.xyz/about</loc>
+  </url>
+
+    <url>
+    <loc>https://johncodes.xyz/projects</loc>
+  </url>
+
+  <url>
+    <loc>https://johncodes.xyz/blog</loc>
+  </url>
+    <url>
+        <loc>https://johncodes.xyz/work</loc>
+    </url>
+</urlset>
