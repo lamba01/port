@@ -7,20 +7,17 @@ export default function NGOLandingPage() {
   return (
     <>
       <Helmet>
-        <title>NGO & Journal Website Developer – John Oluwafemi</title>
+        <title>NGO & Academic Journal Website Developer</title>
         <meta
           name="description"
           content="Get a clean, mobile-friendly, professional website for your NGO or academic journal — fast, affordable, and built to inspire trust."
         />
         <meta
           name="keywords"
-          content="NGO website, journal website, non-profit web design, fast NGO websites, affordable nonprofit websites, academic journal developer"
+          content="NGO website, journal website, non-profit web design, fast NGO websites, affordable nonprofit websites, academic journal developer web developer, professional NGO website, custom journal solutions, mobile-friendly NGO sites, SEO optimized nonprofit websites, NGO landing page, journal landing page"
         />
         <meta name="author" content="John Oluwafemi" />
-        <meta
-          property="og:title"
-          content="NGO & Journal Website Developer – John Oluwafemi"
-        />
+        <meta property="og:title" content="NGO & Journal Website Developer" />
         <meta
           property="og:description"
           content="Clean, modern websites for NGOs and academic journals. Fast delivery, mobile-ready, and easy to manage."

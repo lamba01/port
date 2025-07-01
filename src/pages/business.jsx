@@ -16,7 +16,7 @@ export default function BusinessLandingPage() {
         />
         <meta
           name="keywords"
-          content="ecommerce website, booking website, business website, online store, appointment website developer"
+          content="ecommerce website, booking website, business website, online store, appointment website developer website design, fast ecommerce websites, affordable booking websites, small business web design, web developer, free website consultation, professional website design, custom ecommerce solutions, booking system integration, mobile-friendly websites, SEO optimized websites, business landing page fullstack developer, full-stack web development, online booking system, eCommerce solutions, business websites, web design for small businesses, fast delivery websites, professional web design services"
         />
         <meta name="author" content="John Oluwafemi" />
         <meta
@@ -25,7 +25,7 @@ export default function BusinessLandingPage() {
         />
         <meta
           property="og:description"
-          content="Conversion-focused websites for eCommerce and appointment-based businesses. Fast delivery, mobile-ready, and easy to manage."
+          content="Websites for businesses. Fast delivery, mobile-ready, and easy to manage."
         />
       </Helmet>
 
