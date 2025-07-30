@@ -13,6 +13,7 @@ import Blog from "./pages/blog";
 import StickyContactButton from "./components/stickyContactBtn";
 import NGOLandingPage from "./pages/ngo";
 import BusinessLandingPage from "./pages/business";
+import ScrollToTop from "./components/scrolltotop";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -44,6 +45,7 @@ const App = () => {
 
   return (
     <>
+      <ScrollToTop />
       <Helmet>
         <script type="application/ld+json">
           {`

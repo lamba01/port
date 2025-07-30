@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
 import cepherlogo from "../assets/cepher-logo.jpeg";
+import rwatos from "../assets/rwatos2.png";
+import rwatoslogo from "../assets/rwatoslogo.png";
+import mcken from "../assets/mcken.png";
 import commercelogo from "../assets/commerce-logo.png";
 import { FiExternalLink } from "react-icons/fi";
 import shopease from "../assets/shopease.png";
@@ -18,23 +21,52 @@ const projectsData = [
     image: project1,
     logo: cepherlogo,
     // title: "Centre for Population and Health Research Website",
-    description:
-      "I Designed and developed the Centre for Population and Health Research website to help them share updates, publish reports, and reach a wider audience. It's easy to update and works smoothly on all devices.",
+    description: `I designed and developed the Centre for Population and Health Research website 
+      to help them share updates, publish reports, and reach a wider audience. 
+      It's easy to update and works smoothly on all devices.`,
     technologies: ["React", "Tailwind CSS", "CMS", "Contentful", "Vite"],
     links: "https://www.cepher.org.ng",
   },
   {
     id: 2,
+    image: rwatos,
+    logo: rwatoslogo,
+    description: `I built a modern landing page for Rwatos Ltd, a UK-based furniture wholesaler. 
+      The site showcases their services and portfolio, and includes a contact form with 
+      email notifications for lead capture.`,
+    technologies: ["React", "Tailwind CSS", "EmailJS", "Vite"],
+    links: "https://rwatosltd.com",
+  },
+  {
+    id: 3,
+    image: mcken,
+    logo: "https://lashesbrowsbeautyy.com.ng/logo.jpg",
+    description: `This is a complete booking platform for a beauty brand in Lagos. 
+      Clients can easily book appointments, while the admin dashboard helps the business 
+      owner manage bookings and track income. Built with Firebase Auth and MongoDB.`,
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "MongoDB",
+      "Nodejs",
+      "Express",
+      "Firebase Auth",
+    ],
+    links: "https://lashesbrowsbeautyy.com.ng",
+  },
+  {
+    id: 4,
     image: project2,
     logo: commercelogo,
     // title: "Nigerian Journal of Social Health",
-    description:
-      "Created an academic publishing site for the Nigerian Journal of Social Health using Open Journal Systems (OJS). It helps researchers easily submit and publish papers online, with tools for editors and reviewers to manage the process.",
+    description: `Created an academic publishing site for the Nigerian Journal of Social Health using
+      Open Journal Systems (OJS). It helps researchers easily submit and publish papers online,
+      with tools for editors and reviewers to manage the process.`,
     technologies: ["OJS", "PHP", "JavaScript", "CPanel"],
     links: "https://njsh.org.ng/index.php/njsh-journal",
   },
   {
-    id: 3,
+    id: 5,
     image: shopease,
     logo: commercelogo,
     description: `Developed a complete online shopping site, including user login, 
@@ -44,18 +76,17 @@ const projectsData = [
     links: "https://commeercee.vercel.app",
   },
   {
-    id: 4,
+    id: 6,
     image: taskmanagement,
     logo: tasklogo,
-    description: `Built a full-stack task management application with real-time updates, user authentication, 
-    and intuitive task organization. This app allows users to create, assign, and track tasks efficiently, 
-    ensuring better productivity and collaboration. Developed using the MERN stack, it offers a seamless and 
-    responsive experience across devices.`,
+    description: `A responsive task management tool that lets users create, assign, and track tasks. 
+    Features include real-time updates and user auth. 
+    Great for teams looking to stay productive and organized.`,
     technologies: ["React", "CSS", "Nodejs", "MongoDB", "Express"],
     links: "https://task-managementapp-client.vercel.app",
   },
   {
-    id: 5,
+    id: 7,
     image: imagehub,
     logo: imagehublogo,
     description: `Developed a sleek and responsive image search website powered by the Unsplash API. 
@@ -65,7 +96,7 @@ const projectsData = [
     links: "https://imagehubb.vercel.app",
   },
   {
-    id: 6,
+    id: 8,
     image: glamhome,
     logo: glamlogo,
     description: `Implemented a streamlined appointment booking platform that allows users to schedule appointments 
