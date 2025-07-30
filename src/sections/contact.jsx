@@ -1,29 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { useNavigate } from "react-router-dom";
-import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("xoveyvay");
   const navigate = useNavigate();
-  const [captchaToken, setCaptchaToken] = useState("");
-
-  const handleCaptchaChange = (token) => {
-    setCaptchaToken(token);
-  };
 
   useEffect(() => {
     if (state.succeeded) {
       navigate("/thank-you");
     }
   }, [state.succeeded, navigate]);
-
-  const handleFinalSubmit = (e) => {
-    if (!captchaToken) {
-      e.preventDefault();
-      alert("Please complete the CAPTCHA before submitting.");
-    }
-  };
 
   return (
     <section id="contact" className="py-16 px-4 bg-[#f5f5f5]">
@@ -37,13 +24,7 @@ export default function Contact() {
           website that works for you.
         </p>
 
-        <form
-          onSubmit={(e) => {
-            handleFinalSubmit(e);
-            handleSubmit(e);
-          }}
-          className="flex flex-col gap-5 text-left"
-        >
+        <form onSubmit={handleSubmit} className="flex flex-col gap-5 text-left">
           {/* Email */}
           <div>
             <label htmlFor="email" className="block mb-1 font-medium">
@@ -156,12 +137,6 @@ export default function Contact() {
               errors={state.errors}
             />
           </div>
-
-          {/* reCAPTCHA */}
-          <ReCAPTCHA
-            sitekey="6LeicWgrAAAAAHom-_sOCiB80OtLLRWylR3LLTdq"
-            onChange={handleCaptchaChange}
-          />
 
           {/* Submit */}
           <button

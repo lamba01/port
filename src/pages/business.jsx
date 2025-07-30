@@ -76,26 +76,67 @@ export default function BusinessLandingPage() {
             ✅ Trusted by growing businesses | 🚀 5+ years experience | 💡
             Focused on results & clarity
           </div>
+          {/* TESTIMONIALS */}
+          <h2 className="text-2xl font-semibold mb-4">
+            what business owners say
+          </h2>
+          <div className="grid gap-6 md:grid-cols-3 mb-12">
+            {/* CEPHER */}
+            <div
+              className="p-4 rounded-md shadow text-white"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to top left, #2563eb, #1e3a8a)",
+              }}
+            >
+              <span className="italic font-medium text-lg text-white/85">
+                <FaQuoteLeft className="inline mr-2" />
+                John did an excellent job developing our website. The site has
+                greatly improved our online presence, making it easier for
+                people to learn about our work and stay updated.
+              </span>
+              <span className="mt-2 font-semibold text-sm block text-white/60">
+                — Israel Orubuloye, CEO, CEPHER
+              </span>
+            </div>
 
-          {/* TESTIMONIAL */}
-          <h2 className="text-2xl font-semibold mb-4">Client Feedback</h2>
-          <div
-            className="p-4 rounded-md shadow mb-12"
-            style={{
-              backgroundImage: "linear-gradient(to top left, #2563eb, #1e3a8a)",
-              backgroundColor: "#2563eb", // fallback solid color
-            }}
-          >
-            <span className="italic font-semibold text-white text-lg">
-              <FaQuoteLeft className="inline mr-2" />
-              John did an excellent job developing our website. The site has
-              greatly improved our online presence, making it easier for people
-              to learn about our work and stay updated. Thanks to his work, our
-              visibility on search engines has improved significantly.
-            </span>
-            <span className="mt-2 font-semibold text-sm text-right block text-white/85">
-              — Israel Orubuloye, CEO, CEPHER
-            </span>
+            {/* RWATOS */}
+            <div
+              className="p-4 rounded-md shadow text-white"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to top left, #2563eb, #1e3a8a)",
+              }}
+            >
+              <span className="italic font-medium text-lg text-white/85">
+                <FaQuoteLeft className="inline mr-2" />
+                Working with John was a smooth experience. He understood our
+                business needs and built a site that looks professional and
+                converts well. We've seen more inquiries since launch.
+              </span>
+              <span className="mt-2 font-semibold text-sm block text-white/60">
+                — Francis, Director, Rwatos Ltd
+              </span>
+            </div>
+
+            {/* MCKEN BEAUTY */}
+            <div
+              className="p-4 rounded-md shadow text-white"
+              style={{
+                backgroundImage:
+                  "linear-gradient(to top left, #2563eb, #1e3a8a)",
+              }}
+            >
+              <span className="italic font-medium text-lg text-white/85">
+                <FaQuoteLeft className="inline mr-2" />
+                The booking system John built for us has made appointment
+                management so much easier. It's clean, easy to use, and our
+                clients love it. Highly recommended!
+              </span>
+              <span className="mt-2 font-semibold text-sm block text-white/60">
+                — Kehinde, Founder, Mcken Beauty
+              </span>
+            </div>
           </div>
 
           {/* CONTACT FORM */}
@@ -106,6 +147,20 @@ export default function BusinessLandingPage() {
           {/* PORTFOLIO */}
           <h2 className="text-2xl font-semibold mb-4">Recent Projects</h2>
           <ul className="space-y-4 mb-8">
+            <li>
+              <strong>
+                <a
+                  href="https://lashesbrowsbeautyy.com.ng"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 transition"
+                >
+                  Mcken Beauty
+                </a>
+              </strong>{" "}
+              – Appointment-based website designed for a beauty studio to manage
+              bookings easily
+            </li>
             <li>
               <strong>
                 <a
@@ -120,7 +175,7 @@ export default function BusinessLandingPage() {
               – Online clothing store with full shopping cart and payment
               integration
             </li>
-            <li>
+            {/* <li>
               <strong>
                 <a
                   href="https://airbox-asessment.vercel.app/"
@@ -132,7 +187,7 @@ export default function BusinessLandingPage() {
                 </a>
               </strong>{" "}
               – Booking platform for small service-based businesses
-            </li>
+            </li> */}
             <li>
               <strong>
                 <a
@@ -145,6 +200,20 @@ export default function BusinessLandingPage() {
                 </a>
               </strong>{" "}
               – Informational website for a health research organization
+            </li>
+            <li>
+              <strong>
+                <a
+                  href="https://rwatosltd.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 transition"
+                >
+                  Rwatos Ltd
+                </a>
+              </strong>{" "}
+              – Business website built to showcase the company's services and
+              attract potential clients
             </li>
             <li>
               <strong>
