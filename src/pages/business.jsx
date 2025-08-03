@@ -90,6 +90,8 @@ export default function BusinessLandingPage() {
                 backgroundImage:
                   "linear-gradient(to top left, #2563eb, #1e3a8a)",
               }}
+              data-aos="flip-right"
+              data-aos-delay="500"
             >
               <span className="italic font-medium text-lg text-white/85">
                 <FaQuoteLeft className="inline mr-2" />
@@ -109,6 +111,8 @@ export default function BusinessLandingPage() {
                 backgroundImage:
                   "linear-gradient(to top left, #2563eb, #1e3a8a)",
               }}
+              data-aos="flip-right"
+              data-aos-delay="500"
             >
               <span className="italic font-medium text-lg text-white/85">
                 <FaQuoteLeft className="inline mr-2" />
@@ -128,6 +132,8 @@ export default function BusinessLandingPage() {
                 backgroundImage:
                   "linear-gradient(to top left, #2563eb, #1e3a8a)",
               }}
+              data-aos="flip-right"
+              data-aos-delay="500"
             >
               <span className="italic font-medium text-lg text-white/85">
                 <FaQuoteLeft className="inline mr-2" />
@@ -230,6 +236,8 @@ export default function BusinessLandingPage() {
               backgroundImage: "linear-gradient(to top, #2563eb, #1e3a8a)",
               backgroundColor: "#2563eb", // fallback solid color
             }}
+            data-aos="flip-right"
+            data-aos-delay="700"
           >
             <h1 className="text-2xl font-semibold mb-4">Why Work With Me?</h1>
             <span className="mb-6 block">
