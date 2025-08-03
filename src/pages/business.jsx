@@ -148,7 +148,36 @@ export default function BusinessLandingPage() {
 
           {/* PORTFOLIO */}
           <h2 className="text-2xl font-semibold mb-4">Recent Projects</h2>
+
           <ul className="space-y-4 mb-8">
+            <li>
+              <strong>
+                <a
+                  href="https://rwatosltd.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 transition"
+                >
+                  Rwatos Ltd
+                </a>
+              </strong>{" "}
+              – 🇬🇧 UK-based furniture and lighting wholesale business website
+              built to showcase services and attract clients.
+            </li>
+            <li>
+              <strong>
+                <a
+                  href="https://www.bluebirdconsultltd.com" // Replace with actual link if different
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 transition"
+                >
+                  Bluebird Consult Ltd
+                </a>
+              </strong>{" "}
+              – 🇬🇧 UK-based IT consulting company website designed to present
+              their services and establish a professional online presence.
+            </li>
             <li>
               <strong>
                 <a
@@ -161,7 +190,7 @@ export default function BusinessLandingPage() {
                 </a>
               </strong>{" "}
               – Appointment-based website designed for a beauty studio to manage
-              bookings easily
+              bookings easily.
             </li>
             <li>
               <strong>
@@ -175,21 +204,8 @@ export default function BusinessLandingPage() {
                 </a>
               </strong>{" "}
               – Online clothing store with full shopping cart and payment
-              integration
+              integration.
             </li>
-            {/* <li>
-              <strong>
-                <a
-                  href="https://airbox-asessment.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 transition"
-                >
-                  Glam Beauty Studio
-                </a>
-              </strong>{" "}
-              – Booking platform for small service-based businesses
-            </li> */}
             <li>
               <strong>
                 <a
@@ -201,36 +217,7 @@ export default function BusinessLandingPage() {
                   Centre for Population and Health Research
                 </a>
               </strong>{" "}
-              – Informational website for a health research organization
-            </li>
-            <li>
-              <strong>
-                <a
-                  href="https://rwatosltd.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 transition"
-                >
-                  Rwatos Ltd
-                </a>
-              </strong>{" "}
-              – Business website built to showcase the company's services and
-              attract potential clients
-            </li>
-            <li>
-              <strong>
-                <a
-                  href="https://skewings.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 transition"
-                >
-                  Skewings Landing Page
-                </a>
-              </strong>{" "}
-              – Fully responsive, modern travel landing page designed to attract
-              and convert visitors interested in vacation planning and tour
-              packages.
+              – Informational website for a health research organization.
             </li>
           </ul>
 
