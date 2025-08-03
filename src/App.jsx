@@ -78,7 +78,8 @@ const App = () => {
           `}
         </script>
       </Helmet>
-      <Navbar />
+      {/* <Navbar /> */}
+      {location.pathname !== "/business" && <Navbar />}
       {/* <StickyContactButton /> */}
       {/* Only show StickyContactButton if not on /business */}
       {location.pathname !== "/business" && <StickyContactButton />}

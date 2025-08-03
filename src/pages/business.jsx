@@ -4,10 +4,12 @@ import "aos/dist/aos.css";
 import Contact from "../sections/contact";
 import Blog from "../sections/blogPreview";
 import { FaQuoteLeft } from "react-icons/fa6";
+import BusinessNav from "../components/businessNav";
 
 export default function BusinessLandingPage() {
   return (
     <>
+      <BusinessNav />
       <Helmet>
         <title>eCommerce & Booking Website Developer – John Oluwafemi</title>
         <meta
@@ -47,7 +49,7 @@ export default function BusinessLandingPage() {
               href="#contact"
               // href="https://wa.me/2348166009368?text=Hi%20John%2C%20I%20need%20a%20website%20for%20my%20business"
 
-              className="hover:opacity-80 text-white px-6 py-3 rounded-lg text-lg font-semibold transition"
+              className="hover:opacity-80 text-white px-10 py-3 rounded-lg text-lg font-semibold transition"
               style={{
                 backgroundImage: "linear-gradient(to top, #2563eb, #1e3a8a)",
                 backgroundColor: "#2563eb", // fallback solid color
@@ -58,7 +60,7 @@ export default function BusinessLandingPage() {
           </div>
 
           {/* VALUE BULLETS */}
-          <ul className="space-y-5 mb-8 text-base">
+          <ul className="space-y-5 mb-8 text-base font-semibold">
             <li>
               🛒 Modern eCommerce or booking system tailored to your business
             </li>
@@ -244,10 +246,10 @@ export default function BusinessLandingPage() {
           >
             <h1 className="text-2xl font-semibold mb-4">Why Work With Me?</h1>
             <span className="mb-6 block">
-              I’m <strong>John Oluwafemi</strong>, a full-stack web developer
-              helping business owners turn visitors into customers. I focus on
-              speed, clarity, and making your site do more than just look good —
-              I make it work for you.{" "}
+              I’m <strong>John</strong>, a full-stack web developer helping
+              business owners turn visitors into customers. I focus on speed,
+              clarity, and making your site do more than just look good — I make
+              it work for you.{" "}
               <span className="block mt-2 font-bold">
                 ⚡️ Only 2 project slots available this month
               </span>
