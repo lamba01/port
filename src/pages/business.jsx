@@ -29,16 +29,16 @@ export default function BusinessLandingPage() {
         />
       </Helmet>
 
-      <div className="bg-white text-gray-800 min-h-screen flex flex-col items-center px-4 py-10">
+      <div className="bg-white text-gray-800 min-h-screen flex flex-col items-center px-2 sm:px-4 py-10">
         <div className="max-w-5xl w-full mt-14">
           <h1 className="text-3xl sm:text-4xl font-bold text-center mb-4">
             Websites That Bring You Customers — Not Just Clicks
           </h1>
 
           <p className="text-lg text-center mb-6 sm:px-24">
-            I help small businesses launch professional, stress-free websites
-            that show up on Google, build trust fast, and actually turn visitors
-            into <strong>paying customers</strong>.
+            I help businesses launch professional, stress-free websites that
+            show up on Google, build trust fast, and actually turn visitors into{" "}
+            <strong>paying customers</strong>.
           </p>
 
           {/* FAST CTA */}
@@ -72,8 +72,8 @@ export default function BusinessLandingPage() {
             <li>🚀 Delivered and live in 10-15 days</li>
           </ul>
 
-          <div className="text-sm text-gray-500 text-center mb-12">
-            ✅ Trusted by growing businesses | 🚀 5+ years experience | 💡
+          <div className="text-sm text-gray-500 text-center mb-12 font-semibold">
+            ✅ Trusted by growing businesses in UK | 🚀 5+ years experience | 💡
             Focused on results & clarity
           </div>
           {/* TESTIMONIALS */}
@@ -262,8 +262,8 @@ export default function BusinessLandingPage() {
               </a>
             </div>
           </div>
-          <p className="text-center text-lg text-gray-500 mb-6">
-            Built with: React • Tailwind CSS
+          <p className="text-center text-lg text-gray-500 my-6 font-semibold">
+            Join 20+ businesses already growing online in the UK
           </p>
           <Blog />
           <h2 className="text-xl font-semibold mb-4">FAQs</h2>
@@ -277,6 +277,12 @@ export default function BusinessLandingPage() {
               <strong>Can I update the site myself later?</strong> <br />
               Yes — you'll get an admin panel and short training on how to
               update products or content.
+            </li>
+            <li>
+              <strong>How much does it cost?</strong> <br />
+              Pricing varies based on your project requirements. I offer
+              competitive rates and will provide a detailed quote after our
+              initial consultation.
             </li>
           </ul>
         </div>
