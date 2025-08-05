@@ -44,7 +44,7 @@ export default function BusinessLandingPage() {
           </p>
 
           {/* FAST CTA */}
-          <div className="text-center mb-14">
+          <div className="text-center mb-14 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="#contact"
               // href="https://wa.me/2348166009368?text=Hi%20John%2C%20I%20need%20a%20website%20for%20my%20business"
@@ -55,7 +55,17 @@ export default function BusinessLandingPage() {
                 backgroundColor: "#2563eb", // fallback solid color
               }}
             >
-              💬 Start Your Website
+              Start Your Website
+            </a>
+            <a
+              href="https://wa.me/2348166009368?text=Hi%20John%2C%20I%20need%20a%20website%20for%20my%20business"
+              className="hover:opacity-80 border border-blue-700 text-blue-700 px-10 py-3 rounded-lg text-lg font-semibold transition"
+              // style={{
+              //   backgroundImage: "linear-gradient(to top, #2563eb, #1e3a8a)",
+              //   backgroundColor: "#2563eb", // fallback solid color
+              // }}
+            >
+              💬 Chat on whatsapp
             </a>
           </div>
 
