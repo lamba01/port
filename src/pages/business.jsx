@@ -72,7 +72,8 @@ export default function BusinessLandingPage() {
           {/* VALUE BULLETS */}
           <ul className="space-y-5 mb-8 text-base font-semibold">
             <li>
-              🛒 Modern eCommerce or booking system tailored to your business
+              🛒 Modern eCommerce/Online store or booking system tailored to
+              your business
             </li>
             <li>📱 Mobile-friendly and lightning-fast performance</li>
             <li>
