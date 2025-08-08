@@ -14,8 +14,10 @@ import StickyContactButton from "./components/stickyContactBtn";
 import NGOLandingPage from "./pages/ngo";
 import BusinessLandingPage from "./pages/business";
 import ScrollToTop from "./components/scrolltotop";
+import LandingPageClothing from "./pages/landingPageClothing";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LandingPageSalon from "./pages/LandingPageSalon";
 
 const App = () => {
   useEffect(() => {
@@ -25,6 +27,7 @@ const App = () => {
     });
   }, []);
   const location = useLocation();
+  const hideNavbarPaths = ["/business", "/clothing-site", "beauty-booking"];
 
   const ScrollToHashElement = () => {
     const location = useLocation();
@@ -79,7 +82,7 @@ const App = () => {
         </script>
       </Helmet>
       {/* <Navbar /> */}
-      {location.pathname !== "/business" && <Navbar />}
+      {!hideNavbarPaths.includes(location.pathname) && <Navbar />}
       {/* <StickyContactButton /> */}
       {/* Only show StickyContactButton if not on /business */}
       {location.pathname !== "/business" && <StickyContactButton />}
@@ -92,6 +95,8 @@ const App = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/ngo" element={<NGOLandingPage />} />
         <Route path="/business" element={<BusinessLandingPage />} />
+        <Route path="/clothing-site" element={<LandingPageClothing />} />
+        <Route path="/beauty-booking" element={<LandingPageSalon />} />
       </Routes>
       <Footer />
     </>
