@@ -29,8 +29,9 @@ export default function Contact() {
           Request Your Website Consultation
         </h2>
         <p className="mb-8 text-gray-600 dark:text-gray-300">
-          Whether you run an online store, a salon, or a coaching business —
-          fill out this form to request a free consultation.
+          Whether you run an online store, a salon, or a coaching business, I’m
+          here to help you build a website that works for you. Please fill out
+          this form to get started.
         </p>
 
         <form
@@ -67,7 +68,7 @@ export default function Contact() {
           {/* Service */}
           <div>
             <label htmlFor="service" className="block mb-1 font-medium">
-              What do you need?
+              Service needed?
             </label>
             <select
               name="service"
@@ -115,7 +116,7 @@ export default function Contact() {
           </div>
 
           {/* Timeline */}
-          <div>
+          {/* <div>
             <label htmlFor="timeline" className="block mb-1 font-medium">
               When do you want to launch?
             </label>
@@ -135,10 +136,10 @@ export default function Contact() {
               field="timeline"
               errors={state.errors}
             />
-          </div>
+          </div> */}
 
           {/* Message */}
-          <div>
+          {/* <div>
             <label htmlFor="message" className="block mb-1 font-medium">
               Tell me about your organization or project
             </label>
@@ -155,7 +156,7 @@ export default function Contact() {
               field="message"
               errors={state.errors}
             />
-          </div>
+          </div> */}
 
           {/* reCAPTCHA */}
           <div className="flex justify-start">
@@ -177,6 +178,10 @@ export default function Contact() {
           >
             {state.submitting ? "Sending..." : "Send Message"}
           </button>
+          <span className="text-sm text-center mb-4 text-blue-700 font-semibold">
+            ⚡ I only take on 2 new projects per month, let’s make yours one of
+            them.
+          </span>
         </form>
       </div>
     </section>

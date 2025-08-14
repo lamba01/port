@@ -68,6 +68,10 @@ export default function BusinessLandingPage() {
               💬 Chat on whatsapp
             </a>
           </div>
+          <span className="text-sm text-center mb-4 text-blue-700 font-semibold">
+            ⚡ I only take on 2 new projects per month, let’s make yours one of
+            them.
+          </span>
 
           {/* VALUE BULLETS */}
           <ul className="space-y-5 mb-8 text-base font-semibold">
@@ -158,11 +162,6 @@ export default function BusinessLandingPage() {
             </div>
           </div>
 
-          {/* CONTACT FORM */}
-          <Contact />
-
-          <hr className="my-8" />
-
           {/* PORTFOLIO */}
           <h2 className="text-2xl font-semibold mb-4">Recent Projects</h2>
 
@@ -237,6 +236,11 @@ export default function BusinessLandingPage() {
               – Informational website for a health research organization.
             </li>
           </ul>
+
+          {/* CONTACT FORM */}
+          <Contact />
+
+          <hr className="my-8" />
 
           <hr className="my-8" />
 
