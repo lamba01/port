@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
 import cepherlogo from "../assets/cepher-logo.jpeg";
-import rwatos from "../assets/rwatos2.png";
-import rwatoslogo from "../assets/rwatoslogo.png";
+// import rwatos from "../assets/rwatos2.png";
+// import rwatoslogo from "../assets/rwatoslogo.png";
 import mcken from "../assets/mcken.png";
 import commercelogo from "../assets/commerce-logo.png";
 import { FiExternalLink } from "react-icons/fi";
@@ -26,16 +26,6 @@ const projectsData = [
       It's easy to update and works smoothly on all devices.`,
     technologies: ["React", "Tailwind CSS", "CMS", "Contentful", "Vite"],
     links: "https://www.cepher.org.ng",
-  },
-  {
-    id: 2,
-    image: rwatos,
-    logo: rwatoslogo,
-    description: `I built a modern landing page for Rwatos Ltd, a UK-based furniture wholesaler. 
-      The site showcases their services and portfolio, and includes a contact form with 
-      email notifications for lead capture.`,
-    technologies: ["React", "Tailwind CSS", "EmailJS", "Vite"],
-    links: "https://rwatosltd.com",
   },
   {
     id: 3,
