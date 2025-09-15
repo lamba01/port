@@ -6,10 +6,10 @@ function About() {
   return (
     <>
       <Helmet>
-        <title>About | John Oluwafemi</title>
+        <title>About John Oluwafemi – Freelance Full-Stack Web Developer</title>
         <meta
           name="description"
-          content="Learn more about John Oluwafemi, a full-stack web developer helping startups go digital."
+          content="I build eCommerce stores, booking platforms & custom websites using React & Node.js."
         />
       </Helmet>
       <div>

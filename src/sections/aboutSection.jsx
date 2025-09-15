@@ -8,7 +8,10 @@ export default function AboutSection() {
   return (
     <section className="py-[100px] w-full flex flex-col gap-20 items-center justify-center px-[20px] sm:px-[40px]">
       <div className="flex flex-col justify-center gap-3 w-full sm:w-4/5">
-        <h1 className="text-2xl text-center">About John Oluwafemi</h1>
+        <h1 className="text-2xl text-center">
+          {" "}
+          About John Oluwafemi – Freelance Full-Stack Web Developer
+        </h1>
         <h4 className="text-sm sm:text-xl text-black">
           I'm a <span className="font-semibold">Full-Stack Developer</span> who
           enjoys building clean, easy-to-use web applications. I work mostly
@@ -49,21 +52,21 @@ export default function AboutSection() {
           data-aos-delay="100"
           src={img1}
           className="sm:w-[30%] rounded-xl "
-          alt="workspace"
+          alt="John Oluwafemi web developer workspace with coding setup"
         />
         <img
           data-aos="fade-up"
           data-aos-delay="200"
           src={img4}
           className="sm:w-[30%] rounded-xl "
-          alt="workspace"
+          alt="John Oluwafemi web developer workspace with coding setup"
         />
         <img
           data-aos="fade-up"
           data-aos-delay="300"
           src={img3}
           className="sm:w-[30%] rounded-xl"
-          alt="workspace"
+          alt="John Oluwafemi web developer workspace with coding setup"
         />
       </main>
       <aside>
@@ -71,7 +74,7 @@ export default function AboutSection() {
           data-aos="fade-up"
           src={img2}
           className="h-auto md:h-screen"
-          alt="linkedin"
+          alt="John Oluwafemi coding session – freelance web developer"
         />
       </aside>
     </section>

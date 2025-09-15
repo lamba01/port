@@ -23,7 +23,7 @@ const App = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: false,
+      once: true,
     });
   }, []);
   const location = useLocation();
