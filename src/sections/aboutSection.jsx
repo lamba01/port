@@ -13,9 +13,9 @@ export default function AboutSection() {
           About John Oluwafemi – Freelance Full-Stack Web Developer
         </h1>
         <h4 className="text-sm sm:text-xl text-black">
-          I'm a <span className="font-semibold">Full-Stack Developer</span> who
-          enjoys building clean, easy-to-use web applications. I work mostly
-          with{" "}
+          I'm a <span className="font-semibold">Full-Stack Developer</span> in
+          Lagos, who enjoys building clean, easy-to-use web applications. I work
+          mostly with{" "}
           <span className="font-semibold">
             React, Node.js, and Tailwind CSS,
           </span>{" "}

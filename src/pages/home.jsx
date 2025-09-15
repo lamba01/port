@@ -28,12 +28,15 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>John Oluwafemi | Full-Stack Web Developer</title>
-        <meta
-          name="description"
-          content="Helping startups and businesses go digital with custom, responsive web solutions. Turn your ideas into powerful online experiences."
-        />
+        <title>
+          John Oluwafemi | Full-Stack Web Developer in Lagos, Nigeria
+        </title>
+        <meta name="description" content="" />
+        I’m John Oluwafemi, a full-stack web developer based in Lagos, Nigeria.
+        I help startups and businesses build responsive websites, eCommerce
+        stores, and booking platforms that convert.
       </Helmet>
+
       <div>
         <Hero scrollToProjects={scrollToProjects} />
         <HireMe />
