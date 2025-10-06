@@ -113,7 +113,7 @@ export default function Footer() {
 
       {/* Right Section */}
       <aside className="text-center">
-        <div className="flex flex-col sm:flex-row items-center gap-4 bg-white/10 border border-white/20 px-6 py-4 rounded-3xl backdrop-blur-lg shadow-lg">
+        <div className="flex flex-row sm:flex-row items-center gap-4 bg-white/10 border border-white/20 px-6 py-4 rounded-3xl backdrop-blur-lg shadow-lg">
           <h2 className="text-lg font-semibold capitalize">follow</h2>
           <div className="flex gap-4 items-center justify-center">
             {/* Twitter */}

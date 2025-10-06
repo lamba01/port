@@ -25,12 +25,6 @@ export default function navBar() {
         </a>
         <a
           className="text-sm md:text-lg text-white/80 hover:text-white"
-          href="/work"
-        >
-          work
-        </a>
-        <a
-          className="text-sm md:text-lg text-white/80 hover:text-white"
           href="projects"
         >
           projects

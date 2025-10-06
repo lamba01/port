@@ -1,82 +1,89 @@
 import React from "react";
 import img1 from "../assets/img1.jpeg";
-import img2 from "../assets/img2.jpeg";
+// import img2 from "../assets/img2.jpeg";
 import img3 from "../assets/img3.jpeg";
 import img4 from "../assets/IMG_7612.jpeg";
 
 export default function AboutSection() {
   return (
-    <section className="py-[100px] w-full flex flex-col gap-20 items-center justify-center px-[20px] sm:px-[40px]">
-      <div className="flex flex-col justify-center gap-3 w-full sm:w-4/5">
-        <h1 className="text-2xl text-center">
-          {" "}
-          About John Oluwafemi – Freelance Full-Stack Web Developer
+    <section className="w-full py-[100px] px-[20px] sm:px-[60px] flex flex-col items-center gap-20 bg-[#0a0a0a] text-gray-200">
+      {/* Intro */}
+      <div
+        className="flex flex-col justify-center gap-5 w-full sm:w-4/5 text-center sm:text-left"
+        data-aos="fade-up"
+      >
+        <h1 className="text-3xl sm:text-4xl font-semibold text-white bg-clip-text text-center">
+          About John Oluwafemi
         </h1>
-        <h4 className="text-sm sm:text-xl text-black">
-          I'm a <span className="font-semibold">Full-Stack Developer</span> in
-          Lagos, who enjoys building clean, easy-to-use web applications. I work
-          mostly with{" "}
-          <span className="font-semibold">
-            React, Node.js, and Tailwind CSS,
+
+        <h4 className="text-base sm:text-xl leading-relaxed text-gray-300">
+          I'm a{" "}
+          <span className="font-semibold text-[#3b82f6]">
+            Full-Stack Developer
           </span>{" "}
-          and I build websites that not only look good but work smoothly behind
-          the scenes.
-        </h4>
-        <h4 className="text-sm sm:text-xl text-black">
-          Right now, I&apos;m focused on{" "}
-          <span className="font-semibold">
-            helping businesses get online with eCommerce stores and booking
-            platforms.
+          based in Lagos, passionate about building clean, easy-to-use web
+          applications. I primarily work with{" "}
+          <span className="font-semibold text-[#3b82f6]">
+            React, Node.js, and Tailwind CSS
           </span>{" "}
-          <span className="font-semibold">
-            I also serve as a moderator for the Nigerian Journal of Social
-            Health website,
+          to create websites that look great and perform seamlessly.
+        </h4>
+
+        <h4 className="text-base sm:text-xl leading-relaxed text-gray-300">
+          Currently, I’m focused on{" "}
+          <span className="font-semibold text-[#3b82f6]">
+            helping businesses go digital
           </span>{" "}
-          a platform I built myself using Open Journal Systems (OJS) to make it
-          easier for researchers to submit and publish their work online.
+          with eCommerce stores and booking platforms. I also serve as a
+          moderator for the{" "}
+          <span className="font-semibold text-[#3b82f6]">
+            Nigerian Journal of Social Health
+          </span>
+          , a platform I built using Open Journal Systems (OJS) to simplify
+          online research publishing.
         </h4>
-        <h4 className="text-sm sm:text-xl text-black">
-          When I&apos;m not coding, I&apos;m usually messing around with new
-          tech or brushing up on web dev stuff to keep getting better.
+
+        <h4 className="text-base sm:text-xl leading-relaxed text-gray-300">
+          When I’m not coding, I’m exploring new tools or improving my skills to
+          stay sharp and inspired.
         </h4>
-        <h4 className="text-sm sm:text-xl text-black font-bold">
-          If you're looking for someone who can bring your idea to life —
-          whether it's an online store, a booking system, or a custom website —
-          let's connect!
+
+        <h4 className="text-base sm:text-xl font-bold text-gray-100">
+          If you’re looking for someone who can bring your idea to life — from
+          online stores to booking systems — let’s connect!
         </h4>
       </div>
-      <h2>my workspace</h2>
-      <main className="flex flex-col sm:flex-row gap-5 justify-center w-full">
-        <img
-          data-aos="fade-up"
-          data-aos-delay="100"
-          src={img1}
-          className="sm:w-[30%] rounded-xl "
-          alt="John Oluwafemi web developer workspace with coding setup"
-        />
-        <img
-          data-aos="fade-up"
-          data-aos-delay="200"
-          src={img4}
-          className="sm:w-[30%] rounded-xl "
-          alt="John Oluwafemi web developer workspace with coding setup"
-        />
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          src={img3}
-          className="sm:w-[30%] rounded-xl"
-          alt="John Oluwafemi web developer workspace with coding setup"
-        />
-      </main>
-      <aside>
-        <img
-          data-aos="fade-up"
-          src={img2}
-          className="h-auto md:h-screen"
-          alt="John Oluwafemi coding session – freelance web developer"
-        />
-      </aside>
+
+      {/* Workspace */}
+      <div className="w-full text-center">
+        <h2 className="text-2xl sm:text-3xl font-semibold mb-10  text-white bg-clip-text">
+          My Workspace ✨
+        </h2>
+
+        <main className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <img
+            data-aos="fade-up"
+            data-aos-delay="100"
+            src={img1}
+            className="sm:w-[30%] rounded-2xl shadow-lg shadow-blue-900/40"
+            alt="Workspace image 1"
+          />
+          <img
+            data-aos="fade-up"
+            data-aos-delay="200"
+            src={img4}
+            className="sm:w-[30%] rounded-2xl shadow-lg shadow-blue-900/40"
+            alt="Workspace image 2"
+          />
+          <img
+            data-aos="fade-up"
+            data-aos-delay="300"
+            src={img3}
+            className="sm:w-[30%] rounded-2xl shadow-lg shadow-blue-900/40"
+            alt="Workspace image 3"
+          />
+        </main>
+      </div>
     </section>
   );
 }

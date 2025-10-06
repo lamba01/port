@@ -5,7 +5,6 @@ import { Helmet } from "react-helmet";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Projects from "./pages/projects";
-import Work from "./pages/work";
 import Navbar from "./components/navBar";
 import Footer from "./components/footer";
 import ThankYou from "./pages/thankYou";
@@ -90,7 +89,6 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/work" element={<Work />} />
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/ngo" element={<NGOLandingPage />} />

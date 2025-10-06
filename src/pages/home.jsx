@@ -1,14 +1,12 @@
 import React, { useRef, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Hero from "../sections/hero";
-// import HireMe from "../sections/hireMe";
 import Stats from "../sections/Stats";
 import Projects from "../components/projectComponent";
 import Testimonial from "../sections/testimonial";
-import CreativeProjects from "../sections/creativeProjects";
 import Tools from "../sections/tools";
 import Contact from "../sections/contact";
-// import BlogPreview from "../sections/blogPreview";
+import Experience from "../sections/workExperience";
 
 function Home() {
   const projectsRef = useRef(null);
@@ -41,13 +39,11 @@ function Home() {
       <div>
         <Hero scrollToProjects={scrollToProjects} />
         <Stats />
-        {/* <HireMe /> */}
+        <Experience />
         <div ref={projectsRef}>
           <Projects limit={2} />
         </div>
         <Testimonial />
-        {/* <BlogPreview /> */}
-        <CreativeProjects />
         <Contact />
         <Tools />
       </div>
