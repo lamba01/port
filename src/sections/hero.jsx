@@ -1,66 +1,76 @@
-import React from "react";
-import test from "../assets/logo.png";
+import React, { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
-export default function Hero({ scrollToProjects }) {
+function Hero({ scrollToProjects }) {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+
+  // Create parallax transforms
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
+  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
+
   return (
-    <section className="w-full h-screen flex flex-col justify-center items-center px-[20px] md:px-0">
-      {/* Profile Image */}
-      <img
-        src={test}
-        alt="John Oluwafemi - Fullstack Web Developer"
-        className="absolute top-[35%] sm:top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 h-[100px] w-[100px] md:w-[150px] md:h-[150px] object-cover rounded-full opacity-100 border-8 border-solid border-white z-10 shadow-lg hover:shadow-[0_0_20px_rgba(59,130,246,0.6)] transition transform hover:scale-105"
+    <section
+      ref={ref}
+      className="relative h-[80vh] sm:h-screen flex flex-col items-center justify-center text-center px-6 sm:px-10 bg-[#0e0e0e] text-white overflow-hidden"
+    >
+      {/* Background gradient moving subtly */}
+      <motion.div
+        style={{ y }}
+        className="absolute inset-0 bg-gradient-to-b from-[#111] via-[#0e0e0e] to-black opacity-80"
       />
 
-      {/* SEO-Friendly H1 */}
-      <h1 className="sr-only">
-        John Oluwafemi – Freelance Full-Stack Web Developer (React, Node.js,
-        MySQL, Tailwind CSS)
-      </h1>
-
-      {/* Visible Name Design */}
-      <div className="flex flex-col items-center gap-14 justify-center">
-        <span
-          className="text-6xl md:text-9xl uppercase font-bold"
-          data-aos="fade-left"
-        >
-          john
-        </span>
-        <span
-          className="text-6xl md:text-9xl uppercase mb-3 font-bold"
-          data-aos="fade-right"
-        >
-          oluwafemi
-        </span>
-      </div>
-
-      {/* Intro Paragraph */}
-      <p className="text-lg font-medium text-center md:text-xl my-4">
-        Helping startups and businesses go digital with{" "}
-        <strong>custom eCommerce websites</strong>,{" "}
-        <strong>booking platforms</strong>, and{" "}
-        <strong>web applications</strong>. I craft responsive, user-friendly
-        solutions using React, Node.js, MySQL, and Tailwind CSS that drive real
-        growth.
-      </p>
-
-      {/* CTA Buttons */}
-      <div className="flex flex-col md:flex-row w-full items-center justify-center mt-10 sm:mt-5 gap-3">
-        <a href="#contact" className="sm:w-[250px] flex justify-center">
-          <button
-            className="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900
-                       text-white cursor-pointer py-3 px-8 sm:w-[250px] w-[90vw] rounded-lg shadow-md transition-all duration-200"
+      {/* Main Content */}
+      <motion.div style={{ y, opacity }} className="relative z-10">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
+          Shaping Ideas{" "}
+          <motion.span
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.6, type: "spring" }}
+            className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-500"
           >
-            Start a Project
-          </button>
-        </a>
-        <button
-          onClick={scrollToProjects}
-          className="bg-[#d1d5db] text-black cursor-pointer py-3 px-8 sm:w-[250px] w-[90vw] hover:bg-[#f5f5f5] rounded-lg shadow-md transition-all duration-200"
-          data-aos-delay="300"
+            into Real Projects
+          </motion.span>
+          <br />
+          that{" "}
+          <motion.span
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1, duration: 0.6, type: "spring" }}
+            className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-red-500"
+          >
+            Deliver Results
+          </motion.span>
+        </h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.6, duration: 0.6 }}
+          className="mt-6 text-gray-400 text-base sm:text-lg md:text-xl max-w-xl mx-auto"
         >
-          View Portfolio Projects
-        </button>
-      </div>
+          Hi, I’m{" "}
+          <span className="text-white font-semibold">John Oluwafemi</span>, a
+          Full-Stack Web Developer crafting modern, high-performing websites and
+          digital experiences.
+        </motion.p>
+
+        <motion.button
+          onClick={scrollToProjects}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: "spring", stiffness: 300 }}
+          className="mt-10 px-6 py-3 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-medium shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+        >
+          View My Work
+        </motion.button>
+      </motion.div>
     </section>
   );
 }
+
+export default Hero;

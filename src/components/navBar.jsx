@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function navBar() {
   return (
-    <nav className="flex w-full justify-between items-center px-5 sm:px-10 z-20 fixed backdrop-blur-3xl h-[50px]">
+    <nav className="flex w-full justify-between items-center px-5 sm:px-10 z-20 fixed backdrop-blur-2xl bg-[#0f172a]/70 border-b border-white/10 h-[60px] text-white shadow-md">
       <div className="flex items-center">
         <Link to="/" className="flex items-center gap-2">
           <img
@@ -13,42 +13,42 @@ export default function navBar() {
             src={test}
             alt=""
           />
-          <h5 className="font-bold">John</h5>
+          <h5 className="font-bold text-white/80 hover:text-white">John</h5>
         </Link>
       </div>
       <div className="flex gap-5 md:gap-10 capitalize">
         <a
-          className="text-sm md:text-lg text-black/60 hover:text-black"
+          className="text-sm md:text-lg text-white/80 hover:text-white"
           href="/about"
         >
           about
         </a>
         <a
-          className="text-sm md:text-lg text-black/60 hover:text-black"
+          className="text-sm md:text-lg text-white/80 hover:text-white"
           href="/work"
         >
           work
         </a>
         <a
-          className="text-sm md:text-lg text-black/60 hover:text-black"
+          className="text-sm md:text-lg text-white/80 hover:text-white"
           href="projects"
         >
           projects
         </a>
         <a
-          className="text-sm md:text-lg text-black/60 hover:text-black hidden sm:block"
+          className="text-sm md:text-lg text-white/80 hover:text-white hidden sm:block"
           href="https://johncodes.xyz/#contact"
           rel="noopener noreferrer"
         >
           contact
         </a>
-        <a
-          className="text-sm md:text-lg text-black/60 hover:text-black"
+        {/* <a
+          className="text-sm md:text-lg text-white/80 hover:text-white"
           href="/blog"
           rel="noopener noreferrer"
         >
           blog
-        </a>
+        </a> */}
       </div>
     </nav>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import { FiExternalLink } from "react-icons/fi";
-// import digitalbanking from "../assets/project3.jpg";
+import { motion } from "framer-motion";
 import rps from "../assets/rps.jpg";
 import skewing from "../assets/skewings.png";
 
@@ -9,7 +9,7 @@ const creativeData = [
     id: 1,
     image: skewing,
     description:
-      "Fully responsive, modern travel landing page designed to attract and convert visitors interested in vacation planning and tour packages. The site emphasizes clean UI, smooth animations, and mobile-first responsiveness ",
+      "Fully responsive, modern travel landing page designed to attract and convert visitors interested in vacation planning and tour packages. Built with smooth animations and a clean UI.",
     link: "https://skewings.vercel.app/",
   },
   {
@@ -23,19 +23,27 @@ const creativeData = [
 
 export default function CreativeProjects() {
   return (
-    <section className="bg-white py-[40px] sm:py-[50px] px-[20px] sm:px-[40px] w-full text-start">
-      <h2>fun builds✨</h2>
-      <main className="py-10 sm:py-10 flex flex-col gap-12 sm:gap-0 sm:flex-row justify-between">
-        {creativeData.map((data) => (
-          <div
+    <section
+      id="fun-builds"
+      className="bg-[#0a0a0a] text-white py-[80px] sm:py-[100px] px-[20px] sm:px-[40px] w-full"
+    >
+      <h2 className="text-3xl sm:text-4xl font-semibold text-center mb-14">
+        Fun Builds ✨
+      </h2>
+
+      <main className="flex flex-col sm:flex-row justify-between items-stretch gap-10 sm:gap-8">
+        {creativeData.map((data, index) => (
+          <motion.div
             key={data.id}
-            className="border-[#f5f5f5] border-2 border-solid rounded-xl w-full sm:w-[48%] p-5 relative group"
-            data-aos="fade-up"
-            style={{
-              backgroundImage:
-                "linear-gradient(to bottom right, #2563eb, #1e3a8a)",
-              backgroundColor: "#2563eb", // fallback solid color
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: index * 0.2,
+              ease: "easeOut",
             }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="relative w-full sm:w-[48%] bg-[#111] rounded-2xl overflow-hidden border border-[#1f1f1f] hover:border-[#2563eb] transition-all duration-300 group"
           >
             <a
               href={data.link}
@@ -46,19 +54,18 @@ export default function CreativeProjects() {
               <img
                 src={data.image}
                 alt="Project screenshot"
-                className="sm:h-[300px] w-full h-[250px] rounded-xl transition-transform group-hover:scale-105"
+                className="h-[250px] sm:h-[300px] w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
+              <div className="p-6">
+                <p className="text-white/80 text-[15px] leading-relaxed mb-4">
+                  {data.description}
+                </p>
+                <div className="flex items-center gap-2 text-blue-400 hover:underline">
+                  View Project <FiExternalLink />
+                </div>
+              </div>
             </a>
-            <h5 className="mt-3 text-white">{data.description}</h5>
-            <a
-              href={data.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 mt-2 hover:underline text-white/80 hover:opacity-80"
-            >
-              View Project <FiExternalLink />
-            </a>
-          </div>
+          </motion.div>
         ))}
       </main>
     </section>

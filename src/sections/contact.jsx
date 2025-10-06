@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { useNavigate } from "react-router-dom";
 import ReCAPTCHA from "react-google-recaptcha";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("xoveyvay");
@@ -21,14 +22,19 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-16 px-4 bg-[#f5f5f5]"
-      data-aos="fade-up"
+      className="py-[80px] sm:py-[100px] px-[20px] sm:px-[40px] bg-[#0a0a0a] text-white"
     >
-      <div className="max-w-2xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6">
+      <motion.div
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+        className="max-w-2xl mx-auto text-center"
+      >
+        <h2 className="text-3xl sm:text-4xl font-semibold mb-6">
           Request Your Website Consultation
         </h2>
-        <p className="mb-8 text-gray-600 dark:text-gray-300">
+        <p className="mb-10 text-white/60">
           Whether you run an online store, a salon, or a coaching business, I’m
           here to help you build a website that works for you. Please fill out
           this form to get started.
@@ -43,10 +49,15 @@ export default function Contact() {
             }
             handleSubmit(e);
           }}
-          className="flex flex-col gap-5 text-left"
+          className="flex flex-col gap-6 text-left"
         >
           {/* Email */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <label htmlFor="email" className="block mb-1 font-medium">
               Email Address
             </label>
@@ -56,17 +67,22 @@ export default function Contact() {
               name="email"
               required
               placeholder="Your email"
-              className="w-full px-4 py-2 border rounded-md border-black border-solid"
+              className="w-full px-4 py-3 rounded-md bg-[#111] border border-[#2a2a2a] text-white focus:outline-none focus:border-blue-500 transition"
             />
             <ValidationError
               prefix="Email"
               field="email"
               errors={state.errors}
             />
-          </div>
+          </motion.div>
 
           {/* Service */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <label htmlFor="service" className="block mb-1 font-medium">
               Service needed?
             </label>
@@ -74,7 +90,7 @@ export default function Contact() {
               name="service"
               id="service"
               required
-              className="w-full px-4 py-2 border rounded-md border-black border-solid"
+              className="w-full px-4 py-3 rounded-md border-solid bg-[#111] border border-[#2a2a2a] text-white focus:outline-none focus:border-blue-500 transition"
             >
               <option value="">Select a service...</option>
               <option value="eCommerce Website">eCommerce Website</option>
@@ -89,10 +105,15 @@ export default function Contact() {
               field="service"
               errors={state.errors}
             />
-          </div>
+          </motion.div>
 
           {/* Budget */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <label htmlFor="budget" className="block mb-1 font-medium">
               What’s your estimated budget?
             </label>
@@ -100,7 +121,7 @@ export default function Contact() {
               name="budget"
               id="budget"
               required
-              className="w-full px-4 py-2 border rounded-md border-black border-solid"
+              className="w-full px-4 py-3 rounded-md bg-[#111] border border-solid border-[#2a2a2a] text-white focus:outline-none focus:border-blue-500 transition"
             >
               <option value="">Choose one...</option>
               <option value="under $100">Less than $100</option>
@@ -113,77 +134,45 @@ export default function Contact() {
               field="budget"
               errors={state.errors}
             />
-          </div>
-
-          {/* Timeline */}
-          {/* <div>
-            <label htmlFor="timeline" className="block mb-1 font-medium">
-              When do you want to launch?
-            </label>
-            <select
-              name="timeline"
-              id="timeline"
-              required
-              className="w-full px-4 py-2 border rounded-md border-black border-solid"
-            >
-              <option value="">Pick an option...</option>
-              <option value="2-weeks">In 1–2 weeks</option>
-              <option value="1-month">In 3–4 weeks</option>
-              <option value="flexible">No fixed timeline</option>
-            </select>
-            <ValidationError
-              prefix="Timeline"
-              field="timeline"
-              errors={state.errors}
-            />
-          </div> */}
-
-          {/* Message */}
-          {/* <div>
-            <label htmlFor="message" className="block mb-1 font-medium">
-              Tell me about your organization or project
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              required
-              placeholder="Briefly describe what you do and what you’re hoping to build..."
-              rows="4"
-              className="w-full px-4 py-2 border rounded-md border-black border-solid"
-            />
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-            />
-          </div> */}
+          </motion.div>
 
           {/* reCAPTCHA */}
-          <div className="flex justify-start">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="flex justify-start"
+          >
             <ReCAPTCHA
               sitekey="6Lfw25QrAAAAAJT-nI6glHQy-bLX_n3XPcWLjgAz"
               onChange={handleCaptchaChange}
             />
-          </div>
+          </motion.div>
 
           {/* Submit */}
-          <button
+          <motion.button
             type="submit"
             disabled={state.submitting}
-            className="text-white px-6 py-2 rounded-md hover:bg-[#333333] transition cursor-pointer"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="text-white px-6 py-3 rounded-md transition cursor-pointer font-semibold w-full sm:w-auto mx-auto"
             style={{
-              backgroundImage: "linear-gradient(to top , #1D4ED8, #1e3a8a)",
+              backgroundImage: "linear-gradient(to right, #2563eb, #1e3a8a)",
               backgroundColor: "#2563eb",
             }}
           >
             {state.submitting ? "Sending..." : "Send Message"}
-          </button>
-          <span className="text-sm text-center mb-4 text-blue-700 font-semibold">
+          </motion.button>
+
+          <span className="text-sm text-center mt-3 text-blue-400 font-medium">
             ⚡ I only take on 2 new projects per month, let’s make yours one of
             them.
           </span>
         </form>
-      </div>
+      </motion.div>
     </section>
   );
 }
