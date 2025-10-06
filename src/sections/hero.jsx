@@ -15,7 +15,7 @@ function Hero({ scrollToProjects }) {
   return (
     <section
       ref={ref}
-      className="relative h-[80vh] sm:h-screen flex flex-col items-center justify-center text-center px-6 sm:px-10 bg-[#0e0e0e] text-white overflow-hidden"
+      className="relative h-screen flex flex-col items-center justify-center text-center px-4 sm:px-10 bg-[#0e0e0e] text-white overflow-hidden"
     >
       {/* Background gradient moving subtly */}
       <motion.div
@@ -25,7 +25,7 @@ function Hero({ scrollToProjects }) {
 
       {/* Main Content */}
       <motion.div style={{ y, opacity }} className="relative z-10">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
+        <h1 className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
           Shaping Ideas{" "}
           <motion.span
             initial={{ opacity: 0, y: 40 }}
