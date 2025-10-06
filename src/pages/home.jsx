@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import Hero from "../sections/hero";
 import Stats from "../sections/Stats";
 import Projects from "../components/projectComponent";
-import Testimonial from "../sections/testimonial";
+// import Testimonial from "../sections/testimonial";
 import Tools from "../sections/tools";
 import Contact from "../sections/contact";
 import Experience from "../sections/workExperience";
@@ -43,7 +43,7 @@ function Home() {
         <div ref={projectsRef}>
           <Projects limit={2} />
         </div>
-        <Testimonial />
+        {/* <Testimonial /> */}
         <Contact />
         <Tools />
       </div>
