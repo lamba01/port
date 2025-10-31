@@ -1,8 +1,9 @@
 import React from "react";
 import { FiExternalLink } from "react-icons/fi";
 import { motion } from "framer-motion";
-import rps from "../assets/rps.jpg";
+// import rps from "../assets/rps.jpg";
 import skewing from "../assets/skewings.png";
+import shopease from "../assets/shopease.png";
 
 const creativeData = [
   {
@@ -12,12 +13,22 @@ const creativeData = [
       "Fully responsive, modern travel landing page designed to attract and convert visitors interested in vacation planning and tour packages. Built with smooth animations and a clean UI.",
     link: "https://skewings.vercel.app/",
   },
+  // {
+  //   id: 2,
+  //   image: rps,
+  //   description:
+  //     "A fun and interactive Rock, Paper, Scissors game with score tracking and responsive design — built with clean UI and smooth animations.",
+  //   link: "https://rpsgamers.netlify.app/",
+  // },
   {
     id: 2,
-    image: rps,
-    description:
-      "A fun and interactive Rock, Paper, Scissors game with score tracking and responsive design — built with clean UI and smooth animations.",
-    link: "https://rpsgamers.netlify.app/",
+    image: shopease,
+    // logo: commercelogo,
+    description: `Developed a complete online shopping site, including user login, 
+      product listings, cart system, and checkout simulation. Designed to be simple, clean, and 
+      functional for both customers and business owners. Includes Paystack payment and order tracking.`,
+    // technologies: ["React", "Nodejs", "MySQL", "Express", "Ejs"],
+    link: "https://commeercee.vercel.app",
   },
 ];
 
