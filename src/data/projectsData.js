@@ -13,6 +13,7 @@ import imagehub from "../assets/imagehubb.png";
 import imagehublogo from "../assets/imagehub-logo.svg";
 import glamhome from "../assets/glam-home.jpg";
 import glamlogo from "../assets/glamheader-logo.png";
+import sblofa from "../assets/sblofa-logo.webp";
 
 const projectsData = [
   {
@@ -27,7 +28,7 @@ const projectsData = [
     links: "https://www.cepher.org.ng",
   },
   {
-    id: 3,
+    id: 2,
     image: mcken,
     logo: "https://lashesbrowsbeautyy.com.ng/logo.jpg",
     description: `This is a complete booking platform for a beauty brand in Lagos. 
@@ -44,7 +45,7 @@ const projectsData = [
     links: "https://lashesbrowsbeautyy.com.ng",
   },
   {
-    id: 4,
+    id: 3,
     image: project2,
     logo: commercelogo,
     // title: "Nigerian Journal of Social Health",
@@ -53,6 +54,22 @@ const projectsData = [
       with tools for editors and reviewers to manage the process.`,
     technologies: ["OJS", "PHP", "JavaScript", "CPanel"],
     links: "https://njsh.org.ng/index.php/njsh-journal",
+  },
+  {
+    id: 4,
+    image: sblofa,
+    logo: glamlogo,
+    description: `I optimized their Google Business Profile, completed on-site SEO improvements, 
+    created multiple local directory listings, and built trusted backlinks to boost local search rankings. 
+    This helped the business show up higher on Google and attract more student inquiries.`,
+    technologies: [
+      "Local Citation",
+      "Google Analytics",
+      "Keyword Research Tools",
+      "Google Business Profile",
+      "Google Search Console",
+    ],
+    links: "https://www.sblofadrivingschool.com",
   },
   {
     id: 5,

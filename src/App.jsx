@@ -69,7 +69,7 @@ const App = () => {
             },
             "knowsAbout": ["React", "Node.js", "Tailwind CSS", "SEO", "business websites", 
             "landing pages", "web applications", "web design", "UI/UX design", "digital marketing", "NGO websites",
-            "SaaS", "eCommerce", "web development", "frontend development", 
+            "SaaS", "eCommerce", "web development", "frontend development", "Best web developer in Lagos",
             "backend development", "full-stack development", "software engineering", "web developer", "developer"],
             "address": {
               "@type": "PostalAddress",

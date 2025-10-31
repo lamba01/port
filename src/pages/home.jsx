@@ -39,10 +39,10 @@ function Home() {
       <div>
         <Hero scrollToProjects={scrollToProjects} />
         <Stats />
-        <Experience />
         <div ref={projectsRef}>
           <Projects limit={2} />
         </div>
+        <Experience />
         {/* <Testimonial /> */}
         <Contact />
         <Tools />

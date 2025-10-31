@@ -11,6 +11,13 @@ const experiences = [
       "Regularly update and maintain the website, ensuring security, stability, and compliance with academic publishing standards.",
   },
   {
+    company: "SB Lofa Driving School",
+    date: "10/2025",
+    title: "SEO Optmization",
+    description:
+      "Optimized the Google Business Profile and implemented local SEO strategies to improve search rankings and increase student inquiries.",
+  },
+  {
     company: "Nigerian Journal of Social Health",
     date: "2024 - 2025",
     title: "Lead Developer",
@@ -39,6 +46,12 @@ const testimonials = [
       "John has been instrumental in maintaining the stability and efficiency of our journal’s online platform. He ensures that our website runs smoothly and all technical issues are resolved before they disrupt our publishing workflow.",
     name: "Prof Femi Tinuola",
     role: "Editor-in-Chief, NJSH",
+  },
+  {
+    quote:
+      "I’m very impressed with the work done. He went above and beyond optimizing our Google Business Profile, improving our SEO, and helping the school show up online. The difference is noticeable. Excellent job.",
+    name: "Sahr Bundor",
+    role: "Owner, SB Lofa",
   },
   {
     quote:
