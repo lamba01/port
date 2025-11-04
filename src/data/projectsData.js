@@ -18,7 +18,7 @@ import sblofa from "../assets/sblofa-logo.webp";
 const projectsData = [
   {
     id: 1,
-    image: project1,
+    image: cepherlogo,
     logo: cepherlogo,
     // title: "Centre for Population and Health Research Website",
     description: `I designed and developed the Centre for Population and Health Research website 

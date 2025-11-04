@@ -54,7 +54,6 @@ function Hero({ scrollToProjects }) {
           className="mt-6 text-gray-400 text-base sm:text-lg md:text-xl max-w-2xl mx-auto"
         >
           I help businesses turn their websites into reliable revenue-generating
-          help businesses turn their websites into reliable revenue-generating
           assets. With a focus on performance, user experience, and SEO, I
           create digital solutions that not only look great but also drive real
           results.

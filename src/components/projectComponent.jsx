@@ -36,7 +36,7 @@ export default function Projects() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-56 object-cover"
+                  className="w-full h-56 sm:object-cover object-contain group-hover:scale-105 transition-transform duration-500"
                 />
               </a>
 

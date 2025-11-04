@@ -17,30 +17,26 @@ export default function AboutSection() {
         </h1>
 
         <h4 className="text-base sm:text-xl leading-relaxed text-gray-300">
-          I'm a{" "}
-          <span className="font-semibold text-[#3b82f6]">
-            Full-Stack Developer
-          </span>{" "}
-          based in Lagos, passionate about building clean, easy-to-use web
-          applications. I primarily work with{" "}
-          <span className="font-semibold text-[#3b82f6]">
-            React, Node.js, and Tailwind CSS
-          </span>{" "}
-          to create websites that look great and perform seamlessly.
+          I'm a Full-Stack Developer based in Lagos, passionate about building
+          clean, easy-to-use web applications. I primarily work with React,
+          Node.js, and Tailwind CSS to create websites that look great and
+          perform seamlessly.
         </h4>
 
         <h4 className="text-base sm:text-xl leading-relaxed text-gray-300">
-          Currently, I’m focused on{" "}
+          Currently, I’m focused on helping businesses go digital with eCommerce
+          stores and booking platforms. I also serve as a moderator for the{" "}
           <span className="font-semibold text-[#3b82f6]">
-            helping businesses go digital
-          </span>{" "}
-          with eCommerce stores and booking platforms. I also serve as a
-          moderator for the{" "}
-          <span className="font-semibold text-[#3b82f6]">
-            Nigerian Journal of Social Health
+            <a
+              href="https://njsh.org.ng/index.php/njsh-journal"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Nigerian Journal of Social Health
+            </a>
           </span>
-          , a platform I built using Open Journal Systems (OJS) to simplify
-          online research publishing.
+          , a platform I built using PHP-based software to simplify online
+          research publishing.
         </h4>
 
         <h4 className="text-base sm:text-xl leading-relaxed text-gray-300">
