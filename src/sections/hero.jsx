@@ -51,12 +51,13 @@ function Hero({ scrollToProjects }) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.6, duration: 0.6 }}
-          className="mt-6 text-gray-400 text-base sm:text-lg md:text-xl max-w-xl mx-auto"
+          className="mt-6 text-gray-400 text-base sm:text-lg md:text-xl max-w-2xl mx-auto"
         >
-          Hi, I’m{" "}
-          <span className="text-white font-semibold">John Oluwafemi</span>, a
-          Full-Stack Web Developer crafting modern, high-performing websites and
-          digital experiences.
+          I help businesses turn their websites into reliable revenue-generating
+          help businesses turn their websites into reliable revenue-generating
+          assets. With a focus on performance, user experience, and SEO, I
+          create digital solutions that not only look great but also drive real
+          results.
         </motion.p>
 
         <motion.button
