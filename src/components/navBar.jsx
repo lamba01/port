@@ -25,7 +25,7 @@ export default function navBar() {
         </a>
         <a
           className="text-sm md:text-lg text-white/80 hover:text-white"
-          href="projects"
+          href="/case-studies"
         >
           projects
         </a>

@@ -17,6 +17,10 @@ import LandingPageClothing from "./pages/landingPageClothing";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import LandingPageSalon from "./pages/LandingPageSalon";
+import SbLofa from "./pages/casestudies/sbLofa";
+import MckenBooking from "./pages/casestudies/mckenBooking";
+import NJSHCaseStudy from "./pages/casestudies/njsh";
+import CepherCaseStudy from "./pages/casestudies/cepher";
 
 const App = () => {
   useEffect(() => {
@@ -88,13 +92,17 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/case-studies" element={<Projects />} />
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/ngo" element={<NGOLandingPage />} />
         <Route path="/business" element={<BusinessLandingPage />} />
         <Route path="/clothing-site" element={<LandingPageClothing />} />
         <Route path="/beauty-booking" element={<LandingPageSalon />} />
+        <Route path="/case-studies/sb-lofa" element={<SbLofa />} />
+        <Route path="/case-studies/mcken-booking" element={<MckenBooking />} />
+        <Route path="/case-studies/njsh" element={<NJSHCaseStudy />} />
+        <Route path="/case-studies/cepher" element={<CepherCaseStudy />} />
       </Routes>
       <Footer />
     </>
