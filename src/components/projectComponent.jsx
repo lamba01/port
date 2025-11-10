@@ -44,17 +44,17 @@ export default function Projects() {
             </div>
 
             {/* Description + Tags */}
-            <div className="p-6 flex flex-col justify-between flex-1">
+            <div className="px-2 py-4 flex flex-col justify-between flex-1">
               <p className="text-gray-300 text-sm md:text-base mb-4 leading-relaxed">
                 {project.description}
               </p>
               <a href={project.caseStudyLink}>
-                <button className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white hover:shadow-xl transition-shadow w-fit px-5 py-3 rounded-2xl cursor-pointer capitalize">
+                <button className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white hover:shadow-xl transition-shadow w-fit px-5 py-3 mb-3 rounded-2xl cursor-pointer capitalize">
                   {" "}
                   View case study
                 </button>
               </a>
-              {/* <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, i) => (
                   <span
                     key={i}
@@ -63,7 +63,7 @@ export default function Projects() {
                     {tech}
                   </span>
                 ))}
-              </div> */}
+              </div>
             </div>
           </motion.div>
         ))}
