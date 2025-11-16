@@ -33,7 +33,7 @@ function Hero({ scrollToProjects }) {
             transition={{ delay: 0.5, duration: 0.6, type: "spring" }}
             className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-500"
           >
-            into Real Projects
+            into Websites
           </motion.span>
           <br />
           that{" "}
@@ -41,9 +41,9 @@ function Hero({ scrollToProjects }) {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.6, type: "spring" }}
-            className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-red-500"
+            className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-red-500 capitalize"
           >
-            Deliver Results
+            attracts customers
           </motion.span>
         </h1>
 
