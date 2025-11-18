@@ -158,7 +158,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="text-white px-6 py-3 rounded-md transition cursor-pointer font-semibold w-full sm:w-auto mx-auto"
+            className="text-white px-6 py-3 rounded-md transition cursor-pointer font-semibold w-full sm:w-auto mx-auto hover:scale-105"
             style={{
               backgroundImage: "linear-gradient(to right, #2563eb, #1e3a8a)",
               backgroundColor: "#2563eb",
@@ -166,11 +166,23 @@ export default function Contact() {
           >
             {state.submitting ? "Sending..." : "Send Message"}
           </motion.button>
+          <motion.a
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.55 }}
+            viewport={{ once: true, amount: 0.3 }}
+            href="https://wa.me/2348166009368"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block text-center text-green-400 underline hover:text-green-300"
+          >
+            Or message me directly on WhatsApp
+          </motion.a>
 
-          <span className="text-sm text-center mt-3 text-blue-400 font-medium">
+          {/* <span className="text-sm text-center mt-1 text-blue-400 font-medium">
             ⚡ I only take on 2 new projects per month, let’s make yours one of
             them.
-          </span>
+          </span> */}
         </form>
       </motion.div>
     </section>

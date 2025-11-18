@@ -17,10 +17,9 @@ export default function AboutSection() {
         </h1>
 
         <h4 className="text-base sm:text-xl leading-relaxed text-gray-300">
-          I'm a Full-Stack Developer based in Lagos, passionate about building
-          clean, easy-to-use web applications. I primarily work with React,
-          Node.js, and Tailwind CSS to create websites that look great and
-          perform seamlessly.
+          I'm a Website Developer passionate about building clean, easy-to-use
+          web applications. I primarily work with React, Node.js, and Tailwind
+          CSS to create websites that look great and perform excellently.
         </h4>
 
         <h4 className="text-base sm:text-xl leading-relaxed text-gray-300">
@@ -45,8 +44,8 @@ export default function AboutSection() {
         </h4>
 
         <h4 className="text-base sm:text-xl font-bold text-gray-100">
-          If you’re looking for someone who can bring your idea to life — from
-          online stores to booking systems — let’s connect!
+          If you’re looking for someone who can take your business to the next
+          level with a solid online presence — let’s connect!
         </h4>
       </div>
 

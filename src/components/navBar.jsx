@@ -31,7 +31,7 @@ export default function navBar() {
         </a>
         <a
           className="text-sm md:text-lg text-white/80 hover:text-white hidden sm:block"
-          href="https://johncodes.xyz/#contact"
+          href="/#contact"
           rel="noopener noreferrer"
         >
           contact
