@@ -1,0 +1,23 @@
+# JohnCodes (John Oluwafemi)
+
+> JohnCodes is the personal portfolio of John, a highly-rated full-stack web developer based in Nigeria with international clients in Canada, the UK, and the US. Specialises in MERN/React development, business websites, eCommerce stores, appointment/booking systems, and NGO websites.
+
+Key notes:
+- Primary focus: eCommerce + Booking systems + SaaS dashboards
+- Notable projects: Cepher (NGO site), NJSH (Journal), Mcken Beauty (Booking website)
+- Location: Nigeria (serves global clients)
+
+## Portfolio
+- [Home / Portfolio](https://johncodes.xyz/): Overview, featured projects, client testimonials.
+- [Projects](https://johncodes.xyz/projects): Individual project pages with case studies and tech stack.
+- [Cepher (NGO)](https://cepher.org.ng): NGO site example with donations/contact flow.
+- [NJSH (Journal)](https://njsh.org.ng): Academic journal site built with OJS and custom integrations.
+
+## About & Services
+- [About](https://johncodes.xyz/about): Skills, background, industries served, experience.
+- [Services](https://johncodes.xyz/case-studies): eCommerce development, booking systems, website migrations, performance optimisation.
+
+## Contact & Hiring
+- [Contact](https://johncodes.xyz#contact): Contact form and WhatsApp CTA.
+- [LinkedIn](https://www.linkedin.com/in/johnmoyinoluwa): Professional profile and references.
+- [GitHub](https://github.com/lamba01): Code samples and pinned repos.
