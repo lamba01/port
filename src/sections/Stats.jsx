@@ -8,9 +8,9 @@ export default function Stats() {
   const [animated, setAnimated] = useState(false);
 
   const stats = [
-    { label: "Years of Experience", value: 3 },
+    { label: "Years of Experience", value: 4 },
     { label: "Completed Projects", value: 20 },
-    { label: "Happy Clients", value: 10 },
+    { label: "Happy Clients", value: 20 },
     { label: "Technologies Mastered", value: 10 },
   ];
 
