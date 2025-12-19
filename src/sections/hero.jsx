@@ -53,10 +53,9 @@ function Hero({ scrollToProjects }) {
           transition={{ delay: 1.6, duration: 0.6 }}
           className="mt-6 text-gray-400 text-base sm:text-lg md:text-xl max-w-2xl mx-auto"
         >
-          I help businesses turn their websites into reliable revenue-generating
-          assets. With a focus on performance, user experience, and SEO, I
-          create digital solutions that not only look great but also drive real
-          results.
+          I help businesses build websites that generate revenue.
+          With a focus on performance, user experience, and SEO, I
+          create digital solutions that not only look great but also generate profit.
         </motion.p>
 
         <motion.button
